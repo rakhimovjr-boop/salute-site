@@ -1,0 +1,743 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta property="og:title" content="Salute — бытовая и профессиональная химия от производителя">
+<meta property="og:description" content="Цены первых рук. Производим любую бытовую и профхимию, СТМ под ваш бренд. Ташкент.">
+<meta property="og:image" content="img/salute-gel5-red.jpg">
+<link rel="icon" href="img/logo-salute.png">
+<style>:root{color-scheme:light;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}body{margin:0;font:14px system-ui}img{max-width:100%}[hidden]{display:none!important}</style>
+<title>Salute — бытовая химия</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Salute и A+ — бытовая химия от производителя из Ташкента. Опт, дистрибуция, HoReCa и производство под вашей торговой маркой.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;0,800;1,800&family=Manrope:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: brand-label system — Salute red + label navy + sky, foam bubbles, cut-out products on soft tinted plinths */
+:root{
+  --bg:#FFFFFF; --soft:#F3F8FC; --surface:#FFFFFF; --ink:#18214F; --muted:#5A6489; --line:#E3EAF2;
+  --red:#E50D2F; --red-ink:#FFFFFF; --sky:#3FA9E5; --skysoft:#E3F2FC; --sun:#FFC20E;
+  --navy:#18214F; --navy-fg:#EEF2FF;
+  --shadow:0 1px 2px rgba(24,33,79,.06),0 12px 32px -16px rgba(24,33,79,.28);
+  --f-display:"Rubik","Arial Black",system-ui,sans-serif;
+  --f-body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --r:20px; --max:1180px;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0D1230; --soft:#121940; --surface:#161E4A; --ink:#EEF2FF; --muted:#A7B0D4; --line:#252F66;
+  --red:#FF2E4D; --sky:#5BBDF0; --skysoft:#1A2A5C; --sun:#FFC942; --navy:#070B22; --navy-fg:#E7ECFF;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 14px 34px -18px rgba(0,0,0,.7); color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0D1230; --soft:#121940; --surface:#161E4A; --ink:#EEF2FF; --muted:#A7B0D4; --line:#252F66;
+  --red:#FF2E4D; --sky:#5BBDF0; --skysoft:#1A2A5C; --sun:#FFC942; --navy:#070B22; --navy-fg:#E7ECFF;
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 14px 34px -18px rgba(0,0,0,.7); color-scheme:dark}
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+body{background:var(--bg);color:var(--ink);font:16px/1.6 var(--f-body);-webkit-font-smoothing:antialiased}
+.wrap{max-width:var(--max);margin:0 auto;padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px))}
+section{padding-block:96px;scroll-margin-top:72px}
+h1,h2,h3{font-family:var(--f-display);margin:0;text-wrap:balance;letter-spacing:-.015em}
+h2{font-size:clamp(28px,3.6vw,44px);line-height:1.08;font-weight:800}
+p{margin:0}
+a{color:inherit}
+img{display:block}
+:focus-visible{outline:3px solid var(--sky);outline-offset:3px;border-radius:8px}
+.kicker{display:inline-flex;align-items:center;gap:10px;font:500 13px var(--f-display);letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:16px}
+.kicker::before{content:"";width:22px;height:2px;background:currentColor;border-radius:2px}
+.lead{color:var(--muted);font-size:17px;max-width:58ch}
+.head{display:grid;grid-template-columns:1.1fr .9fr;gap:24px 56px;align-items:end;margin-bottom:48px}
+.head .lead{justify-self:end}
+@media (max-width:860px){.head{grid-template-columns:1fr}.head .lead{justify-self:start}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;height:52px;padding:0 26px;border-radius:999px;background:var(--red);color:var(--red-ink);font:700 15px var(--f-body);text-decoration:none;border:0;cursor:pointer;transition:transform .15s,box-shadow .15s;box-shadow:0 10px 22px -12px rgba(229,13,47,.7)}
+.btn:hover{transform:translateY(-1px)}
+.btn svg{width:18px;height:18px}
+.btn.line{background:transparent;color:var(--ink);box-shadow:inset 0 0 0 1.5px var(--line)}
+.btn.line:hover{box-shadow:inset 0 0 0 1.5px var(--ink)}
+
+/* header */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:30;background:var(--bg)}
+header{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 90%,transparent);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid var(--line)}
+.nav{display:flex;align-items:center;gap:28px;height:72px}
+.brandmark{display:flex;align-items:center;background:#fff;border-radius:10px;padding:5px 9px;flex:none}
+.brandmark img{height:30px;width:auto}
+.nav ul{display:flex;gap:26px;list-style:none;margin:0 auto 0 8px;padding:0;font-weight:600;font-size:14.5px}
+.nav ul a{text-decoration:none;color:var(--muted);transition:color .15s}
+.nav ul a:hover{color:var(--ink)}
+.nav-r{display:flex;align-items:center;gap:12px;margin-left:auto}
+.lang{display:flex;background:var(--soft);border-radius:999px;padding:3px}
+.lang button{border:0;background:transparent;color:var(--muted);font:700 12.5px var(--f-body);letter-spacing:.04em;padding:7px 12px;border-radius:999px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--surface);color:var(--ink);box-shadow:0 1px 3px rgba(24,33,79,.15)}
+.nav .btn{height:42px;padding:0 18px;font-size:14px}
+@media (max-width:980px){.nav ul{display:none}}
+@media (max-width:520px){.nav .btn{display:none}}
+
+/* hero */
+.hero{padding-block:64px 88px;position:relative;overflow:hidden;background:linear-gradient(180deg,var(--soft),var(--bg) 85%)}
+.hero-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(38px,5.6vw,68px);line-height:1.02;font-weight:800}
+.hero h1 .accent{color:var(--red);font-style:italic}
+.hero .lead{margin-top:22px;font-size:18px}
+.hero .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:34px}
+.trust{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:34px;color:var(--muted);font-size:14px;font-weight:600}
+.trust span{display:inline-flex;align-items:center;gap:8px}
+.trust svg{width:18px;height:18px;color:var(--red)}
+.stage{position:relative;aspect-ratio:1/1;max-width:560px;width:100%;justify-self:end}
+.stage .disc{position:absolute;inset:6% 4% 4% 6%;border-radius:50%;background:radial-gradient(circle at 35% 30%,#fff 0,var(--skysoft) 55%,color-mix(in srgb,var(--sky) 35%,var(--skysoft)) 100%)}
+.stage .ring{position:absolute;border-radius:50%;border:2px solid color-mix(in srgb,var(--sky) 45%,transparent)}
+.stage .swoosh{position:absolute;left:-2%;top:2%;width:72%;height:auto}
+.stage .prod{position:absolute;bottom:9%;height:auto;filter:drop-shadow(0 18px 18px rgba(24,33,79,.22)) drop-shadow(0 3px 4px rgba(24,33,79,.15))}
+.stage .p1{left:30%;width:40%;z-index:2}
+.stage .p2{left:7%;width:24%;bottom:10%;z-index:1}
+.stage .p3{right:5%;width:22%;bottom:10%;z-index:1}
+.stage .p4{left:58%;width:21%;bottom:6%;z-index:3}
+.stage .floor{position:absolute;left:12%;right:10%;bottom:5%;height:7%;border-radius:50%;background:radial-gradient(closest-side,rgba(24,33,79,.18),transparent)}
+@media (prefers-reduced-motion:no-preference){
+  .stage .prod{animation:rise .8s cubic-bezier(.2,.8,.2,1) both}
+  .stage .p2{animation-delay:.08s}.stage .p3{animation-delay:.14s}.stage .p4{animation-delay:.2s}
+}
+@keyframes rise{from{transform:translateY(18px)}to{transform:none}}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr}.stage{justify-self:center;max-width:460px}}
+
+/* stats */
+.stats{display:grid;grid-template-columns:repeat(4,1fr);background:var(--navy);color:var(--navy-fg);border-radius:var(--r);margin-top:-36px;position:relative;z-index:2;box-shadow:0 20px 40px -24px rgba(24,33,79,.6)}
+.stat{padding:28px 28px 26px}
+.stat+.stat{border-left:1px solid rgba(255,255,255,.1)}
+.stat b{display:block;font:800 clamp(28px,3.2vw,40px)/1 var(--f-display);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.stat b small{font-size:.55em;color:var(--sun);margin-left:4px}
+.stat span{display:block;margin-top:10px;font-size:14px;color:rgba(238,242,255,.68)}
+@media (max-width:760px){.stats{grid-template-columns:1fr 1fr}.stat:nth-child(3){border-left:0}.stat:nth-child(n+3){border-top:1px solid rgba(255,255,255,.1)}}
+
+/* what we do */
+.what{display:grid;grid-template-columns:1fr 1.2fr;gap:20px}
+.panel{border-radius:var(--r);padding:36px;display:flex;flex-direction:column;gap:16px;min-width:0}
+.panel h3{font-size:24px;font-weight:800;line-height:1.2}
+.panel.own{background:var(--soft)}
+.panel.own p{color:var(--muted)}
+.logos{display:flex;gap:12px;flex-wrap:wrap;margin-top:auto;padding-top:12px}
+.logos span{background:#fff;border-radius:12px;padding:8px 12px;box-shadow:var(--shadow);display:flex}
+.logos img{height:42px;width:auto}
+.panel.stm{background:var(--navy);color:var(--navy-fg);position:relative;overflow:hidden}
+.panel.stm>*{position:relative}
+.panel.stm::before{content:"";position:absolute;width:240px;height:240px;right:-70px;top:-90px;border-radius:50%;background:var(--red)}
+.panel.stm::after{content:"";position:absolute;width:90px;height:90px;right:120px;top:40px;border-radius:50%;border:2px solid rgba(255,255,255,.14)}
+.panel.stm p{color:rgba(238,242,255,.75)}
+.tag{align-self:flex-start;background:var(--sun);color:#18214F;font:700 12px var(--f-body);letter-spacing:.08em;text-transform:uppercase;padding:6px 12px;border-radius:999px}
+.ticks{list-style:none;margin:6px 0 0;padding:0;display:grid;grid-template-columns:1fr 1fr;gap:12px 20px}
+.ticks li{position:relative;padding-left:30px;font-size:15px;line-height:1.45}
+.ticks li::before{content:"";position:absolute;left:0;top:1px;width:20px;height:20px;border-radius:50%;background:var(--red) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3 6-7' fill='none' stroke='white' stroke-width='2.2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/100% no-repeat}
+@media (max-width:900px){.what{grid-template-columns:1fr}}
+@media (max-width:520px){.ticks{grid-template-columns:1fr}.panel{padding:28px 22px}}
+.clients-row{display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:center;margin-top:20px;padding:22px 24px;border:1px solid var(--line);border-radius:var(--r)}
+.clients-row>span{font-weight:700;font-size:14px;color:var(--muted);max-width:16ch;line-height:1.35}
+.clients{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+.cl{height:72px;border-radius:12px;overflow:hidden;display:grid;place-items:center;background:var(--soft)}
+.cl img{width:100%;height:100%;object-fit:cover}
+.cl.word{background:linear-gradient(120deg,#2A9D52,#1F6FB5)}
+.cl.word span{color:#fff;font:800 italic 22px var(--f-display);text-shadow:0 2px 0 rgba(0,0,0,.15)}
+.cl.more span{color:var(--muted);font-weight:700;font-size:14px}
+@media (max-width:760px){.clients-row{grid-template-columns:1fr}.clients{grid-template-columns:1fr 1fr}}
+.steps4{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin-top:20px;counter-reset:st}
+.steps4 div{display:flex;gap:14px;align-items:center;padding:18px 20px;border-top:2px solid var(--line);font-weight:600;font-size:15px;line-height:1.3}
+.steps4 div::before{counter-increment:st;content:counter(st);flex:none;width:34px;height:34px;border-radius:50%;background:var(--skysoft);color:var(--ink);display:grid;place-items:center;font:800 15px var(--f-display)}
+.steps4 div:first-child{border-top-color:var(--red)}
+.steps4 div:first-child::before{background:var(--red);color:#fff}
+@media (max-width:760px){.steps4{grid-template-columns:1fr 1fr}}
+
+/* catalog */
+.catalog{background:var(--soft)}
+.bar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:16px;margin-bottom:28px}
+.filters{display:flex;flex-wrap:wrap;gap:8px}
+.chip{border:0;background:var(--surface);color:var(--ink);border-radius:999px;height:40px;padding:0 18px;font:600 14px var(--f-body);cursor:pointer;box-shadow:inset 0 0 0 1px var(--line)}
+.chip:hover{box-shadow:inset 0 0 0 1px var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--bg);box-shadow:none}
+.note{font-size:13.5px;color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}
+@media (max-width:1060px){.grid{grid-template-columns:repeat(3,1fr)}}
+@media (max-width:720px){.grid{grid-template-columns:repeat(2,1fr);gap:12px}}
+.card{background:var(--surface);border-radius:var(--r);box-shadow:var(--shadow);display:flex;flex-direction:column;overflow:hidden;transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-4px)}
+.plinth{position:relative;aspect-ratio:4/5;max-width:100%;display:grid;place-items:end center;padding:14% 12% 10%;background:radial-gradient(120% 90% at 50% 100%,color-mix(in srgb,var(--c) 26%,var(--surface)) 0,color-mix(in srgb,var(--c) 9%,var(--surface)) 60%,var(--surface) 100%)}
+.plinth::after{content:"";position:absolute;left:22%;right:22%;bottom:8%;height:6%;border-radius:50%;background:radial-gradient(closest-side,rgba(24,33,79,.22),transparent);z-index:0}
+.plinth img{position:absolute;z-index:1;left:10%;top:9%;width:80%;height:82%;object-fit:contain;object-position:center bottom;filter:drop-shadow(0 10px 10px rgba(24,33,79,.16));transition:opacity .2s}
+.hit{position:absolute;top:14px;left:14px;z-index:2;display:inline-flex;align-items:center;gap:6px;background:var(--red);color:#fff;font:700 12px var(--f-body);letter-spacing:.06em;text-transform:uppercase;padding:6px 11px;border-radius:999px}
+.hit svg{width:12px;height:12px;color:var(--sun)}
+.cbody{padding:18px 20px 20px;display:flex;flex-direction:column;gap:6px;flex:1}
+.meta{font-size:12.5px;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--red)}
+.meta i{font-style:normal;color:var(--muted);font-weight:600;letter-spacing:0;text-transform:none}
+.card h3{font:700 16.5px/1.3 var(--f-body);letter-spacing:0}
+.sw{display:flex;gap:8px;margin-top:6px;min-height:22px}
+.sw button{width:22px;height:22px;border-radius:50%;border:0;padding:0;cursor:pointer;box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}
+.sw button[aria-pressed="true"]{box-shadow:0 0 0 2px var(--surface),0 0 0 4px var(--ink)}
+.foot{margin-top:auto;padding-top:12px;display:flex;justify-content:space-between;gap:8px;font-size:13px;color:var(--muted);border-top:1px solid var(--line);font-variant-numeric:tabular-nums}
+.foot b{color:var(--ink);font-weight:700;display:inline-flex;align-items:center;gap:4px}
+.foot b svg{width:14px;height:14px;color:var(--sun)}
+@media (max-width:520px){.cbody{padding:14px 14px 16px}.card h3{font-size:15px}.foot{flex-direction:column;gap:2px}}
+
+/* production */
+.prod-band{background:var(--navy);color:var(--navy-fg);position:relative;overflow:hidden}
+.prod-band::before{content:"";position:absolute;width:520px;height:520px;right:-180px;top:-200px;border-radius:50%;border:2px solid rgba(255,255,255,.07)}
+.prod-band::after{content:"";position:absolute;width:300px;height:300px;right:-40px;top:-60px;border-radius:50%;background:rgba(63,169,229,.12)}
+.prod-band .wrap{position:relative;z-index:1}
+.prod-band .lead{color:rgba(238,242,255,.72)}
+.prod-band .kicker{color:var(--sun)}
+.figures{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin-bottom:56px}
+.fig{padding:26px 0 0;border-top:1px solid rgba(255,255,255,.16)}
+.fig b{display:block;font:800 clamp(40px,5vw,60px)/1 var(--f-display);color:#fff;letter-spacing:-.02em}
+.fig b em{font-style:normal;color:var(--sun)}
+.fig span{display:block;margin-top:10px;color:rgba(238,242,255,.72);font-size:15px}
+.flow{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.flow div{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:24px}
+.flow svg{width:30px;height:30px;color:var(--sky);margin-bottom:16px}
+.flow h3{font-size:18px;font-weight:700;margin-bottom:8px}
+.flow p{font-size:14.5px;color:rgba(238,242,255,.7)}
+@media (max-width:900px){.flow{grid-template-columns:1fr 1fr}.figures{grid-template-columns:1fr}}
+@media (max-width:520px){.flow{grid-template-columns:1fr}}
+
+/* why */
+.why{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.why div{padding:28px;border-radius:var(--r);background:var(--soft)}
+.why svg{width:44px;height:44px;padding:10px;border-radius:12px;background:var(--surface);color:var(--red);box-shadow:var(--shadow);margin-bottom:18px}
+.why h3{font-size:18px;font-weight:700;margin-bottom:8px}
+.why p{color:var(--muted);font-size:15px}
+@media (max-width:900px){.why{grid-template-columns:1fr 1fr}}
+@media (max-width:560px){.why{grid-template-columns:1fr}}
+
+/* partners */
+.aud{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.aud div{border-radius:var(--r);padding:30px;border:1px solid var(--line);display:flex;flex-direction:column;gap:14px}
+.aud h3{font-size:21px;font-weight:800}
+.aud ul{margin:0;padding:0;list-style:none;display:grid;gap:10px;color:var(--muted);font-size:15px}
+.aud li{padding-left:18px;position:relative}
+.aud li::before{content:"";position:absolute;left:0;top:.62em;width:7px;height:7px;border-radius:50%;background:var(--sky)}
+.aud div:first-child{background:var(--red);border-color:transparent;color:#fff}
+.aud div:first-child ul{color:rgba(255,255,255,.88)}
+.aud div:first-child li::before{background:var(--sun)}
+@media (max-width:900px){.aud{grid-template-columns:1fr}}
+
+/* reviews */
+.reviews{background:var(--soft)}
+.rv{display:grid;grid-template-columns:1.2fr 1fr 1fr;grid-template-rows:auto auto;gap:20px}
+.rv figure{margin:0;background:var(--surface);border-radius:var(--r);padding:28px;box-shadow:var(--shadow);display:flex;flex-direction:column;gap:16px}
+.rv figure:first-child{grid-row:span 2;background:var(--red);color:#fff;justify-content:space-between}
+.rv blockquote{margin:0;font-size:16px;line-height:1.55}
+.rv figure:first-child blockquote{font:700 clamp(22px,2.4vw,28px)/1.3 var(--f-display)}
+.stars{display:flex;gap:2px;color:var(--sun)}
+.stars svg{width:16px;height:16px}
+.rv figcaption{font-size:13.5px;color:var(--muted)}
+.rv figcaption b{color:var(--ink);font-weight:700}
+.rv figure:first-child figcaption,.rv figure:first-child figcaption b{color:rgba(255,255,255,.9)}
+@media (max-width:900px){.rv{grid-template-columns:1fr 1fr}.rv figure:first-child{grid-row:auto;grid-column:span 2}}
+@media (max-width:560px){.rv{grid-template-columns:1fr}.rv figure:first-child{grid-column:auto}}
+
+/* contact */
+.contact{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:start}
+.ch{display:grid;gap:10px;margin-top:32px}
+.row{display:flex;align-items:center;gap:14px;padding:14px 16px;border-radius:14px;background:var(--soft)}
+.row .ic{flex:none;width:40px;height:40px;border-radius:12px;display:grid;place-items:center;background:var(--surface);color:var(--red)}
+.row .ic svg{width:20px;height:20px}
+.row .tx{flex:1;min-width:0}
+.row .tx small{display:block;font-size:12px;color:var(--muted);font-weight:600}
+.row .tx span{font-weight:700;font-size:16.5px;font-variant-numeric:tabular-nums;user-select:all}
+.row a.act,.row button.act{flex:none;height:36px;padding:0 14px;border-radius:999px;border:0;background:var(--surface);color:var(--ink);font:700 13px var(--f-body);text-decoration:none;display:inline-flex;align-items:center;cursor:pointer;box-shadow:inset 0 0 0 1px var(--line)}
+.row.tg{background:var(--sky);color:#fff}
+.row.tg .ic{background:rgba(255,255,255,.2);color:#fff}
+.row.tg small{color:rgba(255,255,255,.85)}
+.row.tg a.act{background:#fff;color:#18214F;box-shadow:none}
+.firm{margin-top:18px;font-size:14px;color:var(--muted)}
+form{background:var(--surface);border-radius:24px;padding:36px;box-shadow:var(--shadow);border:1px solid var(--line);display:grid;gap:16px}
+form h3{font-size:24px;font-weight:800}
+form>p{color:var(--muted);font-size:14.5px;margin-top:-8px}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+label{display:grid;gap:7px;font-size:13px;font-weight:700}
+input,select,textarea{font:500 15px var(--f-body);color:var(--ink);background:var(--soft);border:1.5px solid transparent;border-radius:12px;padding:13px 14px;width:100%;transition:border-color .15s,background .15s}
+input:focus,select:focus,textarea:focus{outline:none;border-color:var(--sky);background:var(--surface)}
+textarea{min-height:96px;resize:vertical}
+form .btn{width:100%}
+.out{display:grid;gap:10px;background:var(--skysoft);border-radius:14px;padding:16px;font-size:14px}
+.out pre{white-space:pre-wrap;margin:0;font:500 13px/1.5 ui-monospace,Menlo,Consolas,monospace}
+.out button{justify-self:start;height:36px;padding:0 14px;border-radius:999px;border:0;background:var(--surface);color:var(--ink);font:700 13px var(--f-body);cursor:pointer}
+@media (max-width:900px){.contact{grid-template-columns:1fr;gap:40px}}
+.contact>*{min-width:0}
+.row .tx span{white-space:nowrap}
+#phones .row{flex-wrap:wrap}#phones .row .tx{flex:1 1 calc(100% - 54px)}#phones .row a.act,#phones .row button.act{flex:1 1 0;justify-content:center;max-width:150px}
+@media (max-width:520px){.two{grid-template-columns:1fr}form{padding:26px 20px}}
+
+footer.site{background:var(--navy);color:rgba(238,242,255,.7);padding-block:40px;font-size:14px}
+footer.site .wrap{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:20px}
+footer.site .fl{display:flex;align-items:center;gap:14px}
+footer.site .fl span{background:#fff;border-radius:8px;padding:4px 8px;display:flex}
+footer.site .fl img{height:24px;width:auto}
+
+/* v9: photos + 3 pillars */
+.hero{padding-block:48px 64px}
+.hero-grid{grid-template-columns:1.15fr .85fr;gap:48px}
+.hero h1{font-size:clamp(34px,4.8vw,60px)}
+.collage{display:grid;grid-template-columns:1.2fr 1fr;grid-template-rows:1fr 1fr;gap:12px;width:100%;max-width:100%}
+.collage img{width:100%;height:100%;object-fit:cover;border-radius:18px;background:#EEF1F4;box-shadow:var(--shadow)}
+.collage img:first-child{grid-row:span 2;aspect-ratio:3/4}
+.collage img:not(:first-child){aspect-ratio:1/1}
+@media (max-width:900px){.hero-grid{grid-template-columns:1fr;gap:32px}.collage{max-width:460px}}
+.pillars{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:40px}
+.pl{border-radius:var(--r);padding:26px 26px 28px;display:flex;flex-direction:column;gap:10px;text-decoration:none;position:relative;overflow:hidden}
+.pl::after{content:"";position:absolute;width:130px;height:130px;right:-40px;bottom:-50px;border-radius:50%;border:2px solid currentColor;opacity:.12}
+.pl-top{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:6px}
+.pl .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;flex:none}
+.pl .ic svg{width:22px;height:22px}
+.pl .num{text-align:right;line-height:1}
+.pl .num b{display:block;font:800 30px/1 var(--f-display);letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.pl .num small{display:block;margin-top:6px;font-size:12px;font-weight:600;opacity:.75}
+.pl h3{font-size:21px;font-weight:800;line-height:1.2}
+.pl p{font-size:15px;line-height:1.5}
+.p-red{background:var(--red);color:#fff}
+.p-red .ic{background:rgba(255,255,255,.18);color:#fff}
+.p-red p{color:rgba(255,255,255,.88)}
+.p-navy{background:var(--navy);color:var(--navy-fg)}
+.p-navy .ic{background:rgba(255,255,255,.1);color:var(--sun)}
+.p-navy p{color:rgba(238,242,255,.78)}
+.p-light{background:var(--surface);color:var(--ink);box-shadow:var(--shadow);border:1px solid var(--line);transition:transform .15s}
+.p-light:hover{transform:translateY(-2px)}
+.p-light .ic{background:var(--skysoft);color:var(--sky)}
+.p-light .num b{color:var(--red)}
+.p-light p{color:var(--muted)}
+.more{display:inline-flex;align-items:center;gap:8px;margin-top:auto;padding-top:6px;font-weight:700;color:var(--red);font-size:15px}
+.more svg{width:16px;height:16px}
+@media (max-width:900px){.pillars{grid-template-columns:1fr}}
+.cats{display:grid;grid-template-columns:1fr 1fr;gap:20px;margin-top:20px}
+.cats>div{border-radius:var(--r);padding:26px;background:var(--soft)}
+.cats h4{margin:0 0 14px;font:800 18px var(--f-display)}
+.cats ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:8px}
+.cats li{background:var(--surface);border-radius:999px;padding:8px 14px;font-size:14px;font-weight:600;box-shadow:0 1px 0 var(--line)}
+.cats>div:last-child h4{color:var(--red)}
+@media (max-width:760px){.cats{grid-template-columns:1fr}}
+.plinth{padding:0;background:#EEF1F4;aspect-ratio:3/4}
+.plinth::after{display:none}
+.plinth img{left:0;top:0;width:100%;height:100%;object-fit:cover;object-position:center;filter:none}
+
+.sectors{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:var(--r);overflow:hidden;margin-bottom:20px}
+.sec{background:var(--surface);padding:26px 26px 28px;display:grid;grid-template-columns:44px 1fr;gap:4px 16px;align-content:start;transition:background .2s}
+.sec:hover{background:var(--soft)}
+.sec .si{grid-row:span 2;width:44px;height:44px;border-radius:12px;display:grid;place-items:center;background:var(--skysoft);color:var(--ink)}
+.sec .si svg{width:22px;height:22px}
+.sec h3{font-size:18px;font-weight:800;line-height:1.25;align-self:end}
+.sec small{font-size:13.5px;color:var(--muted);font-weight:600}
+.sec p{grid-column:1 / -1;margin-top:14px;padding-top:14px;border-top:1px dashed var(--line);display:grid;grid-template-columns:1fr 1fr;gap:6px 14px;font-size:14px;line-height:1.35;color:var(--ink)}
+.sec p span{position:relative;padding-left:13px;min-width:0}
+.sec p span::before{content:"";position:absolute;left:0;top:.5em;width:5px;height:5px;border-radius:50%;background:var(--red)}
+.sec:first-child .si{background:var(--red);color:#fff}
+@media (max-width:980px){.sectors{grid-template-columns:1fr 1fr}}
+@media (max-width:600px){.sectors{grid-template-columns:1fr}}
+
+.cl{height:84px;background:#fff;border:1px solid var(--line);padding:14px 20px}
+.cl{display:flex;align-items:center;justify-content:center}
+.cl img{width:auto;height:auto;max-width:100%;max-height:54px;object-fit:contain}
+.cl.word{background:#fff}
+.cl.word span{color:#18214F;font:800 22px var(--f-display);text-shadow:none;letter-spacing:-.01em}
+.cl.more{background:transparent;border-style:dashed}
+</style>
+
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-star" viewBox="0 0 20 20"><path fill="currentColor" d="M10 1.8l2.5 5.2 5.7.8-4.1 4 1 5.6L10 14.7l-5.1 2.7 1-5.6-4.1-4 5.7-.8z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 20 20"><path d="M4 10h11m-4-4.5L15.5 10 11 14.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-drop" viewBox="0 0 24 24"><path d="M12 3s6 6.4 6 11a6 6 0 0 1-12 0c0-4.6 6-11 6-11z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M9.5 14.5a2.5 2.5 0 0 0 2.5 2.5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-leaf" viewBox="0 0 24 24"><path d="M5 19c0-8 5-13 14-14 0 9-5 14-13 14M5 19l7-7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-shirt" viewBox="0 0 24 24"><path d="M8.5 4L4 6.5l2 4 2-1V20h8V9.5l2 1 2-4L15.5 4a3.5 3.5 0 0 1-7 0z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-hand" viewBox="0 0 24 24"><path d="M7 12V6.5a1.5 1.5 0 0 1 3 0V11m0-1.5V5a1.5 1.5 0 0 1 3 0v6m0-4.5a1.5 1.5 0 0 1 3 0V12m0-3a1.5 1.5 0 0 1 3 0v5a7 7 0 0 1-7 7h-.5a6 6 0 0 1-4.7-2.3L4.2 15a1.6 1.6 0 0 1 2.6-1.9L7 13" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-box" viewBox="0 0 24 24"><path d="M3.5 7.5L12 3l8.5 4.5v9L12 21l-8.5-4.5z M3.5 7.5L12 12l8.5-4.5M12 12v9" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-tag" viewBox="0 0 24 24"><path d="M3 12V4h8l10 10-8 8z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7.5" cy="8.5" r="1.6" fill="currentColor"/></symbol>
+  <symbol id="i-mix" viewBox="0 0 24 24"><path d="M6 3h12M8 3v6l-4 9a2 2 0 0 0 1.8 3h12.4a2 2 0 0 0 1.8-3l-4-9V3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M6 15h12" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-check" viewBox="0 0 24 24"><path d="M12 3l7 3v5c0 4.5-3 8.5-7 10-4-1.5-7-5.5-7-10V6z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><path d="M8.5 12l2.5 2.5 4.5-5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-bottle" viewBox="0 0 24 24"><path d="M10 2h4v3l2 3v12a2 2 0 0 1-2 2h-4a2 2 0 0 1-2-2V8l2-3z M8 12h8" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h12v10H2zM14 9h4l3 3.5V16h-7z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="6" cy="17.5" r="1.8" fill="var(--navy)" stroke="currentColor" stroke-width="1.8"/><circle cx="17" cy="17.5" r="1.8" fill="var(--navy)" stroke="currentColor" stroke-width="1.8"/></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path d="M6.5 3h3l1.5 4.5-2 1.5a11 11 0 0 0 6 6l1.5-2 4.5 1.5v3a2 2 0 0 1-2 2A16 16 0 0 1 4.5 5a2 2 0 0 1 2-2z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-send" viewBox="0 0 24 24"><path d="M21 3L3 10.5l7 2.5 2.5 7z M21 3L10 13" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  <symbol id="i-home" viewBox="0 0 24 24"><path d="M3.5 11L12 4l8.5 7M6 9.5V20h12V9.5M10 20v-5h4v5" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-cutlery" viewBox="0 0 24 24"><path d="M7 3v8M4.5 3v5a2.5 2.5 0 0 0 5 0V3M7 11v10M17 21V3c-2.2 1.2-3.5 3.8-3.5 7v3H17" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-spray" viewBox="0 0 24 24"><path d="M9 8h5l1 3v9a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-9zM10 8V5h6l2 2M18 4.5l2-1M18.5 7h2.5M18 9.5l2 1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+  <symbol id="i-car" viewBox="0 0 24 24"><path d="M4 16v-4l2-5h12l2 5v4zM4 16v3h3v-3M17 16v3h3v-3M4 12h16" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/><circle cx="7.5" cy="14" r="1" fill="currentColor"/><circle cx="16.5" cy="14" r="1" fill="currentColor"/></symbol>
+  <symbol id="i-washer" viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="2" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="12" cy="13" r="4.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M7 6.5h2M14 6.5h3" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+  <symbol id="i-factory" viewBox="0 0 24 24"><path d="M3 21V10l5 3V10l5 3V5h4l1 16z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+</svg>
+
+<header>
+  <div class="wrap nav">
+    <a class="brandmark" href="#top" aria-label="Salute"><img src="img/logo-salute.png" alt="Salute"></a>
+    <ul>
+      <li><a href="#what" data-i="nav_what"></a></li>
+      <li><a href="#catalog" data-i="nav_cat"></a></li>
+      <li><a href="#production" data-i="nav_prod"></a></li>
+      <li><a href="#partners" data-i="nav_part"></a></li>
+      <li><a href="#contact" data-i="nav_cont"></a></li>
+    </ul>
+    <div class="nav-r">
+      <div class="lang" role="group" aria-label="Язык / Тіл">
+        <button type="button" id="l-ru" data-l="ru" aria-pressed="true">RU</button>
+        <button type="button" id="l-kz" data-l="kz" aria-pressed="false">KZ</button>
+      </div>
+      <a class="btn" href="#contact" data-i="nav_cta"></a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-grid">
+        <div>
+          <span class="kicker" data-i="h_k"></span>
+          <h1 data-i="h_t"></h1>
+          <p class="lead" data-i="h_l"></p>
+          <div class="cta">
+            <a class="btn" href="#contact"><span data-i="h_c1"></span><svg><use href="#i-arrow"/></svg></a>
+            <a class="btn line" href="#catalog" data-i="h_c2"></a>
+          </div>
+        </div>
+        <div class="collage" aria-hidden="true">
+          <img src="img/salute-gel5-red.jpg" alt="">
+          <img src="img/salute-antifat.jpg" alt="">
+          <img src="img/salute-cream-blue.jpg" alt="">
+        </div>
+      </div>
+      <div class="pillars">
+        <div class="pl p-red">
+          <div class="pl-top"><span class="ic"><svg><use href="#i-factory"/></svg></span><span class="num"><b>60 т</b><small data-i="pl1n"></small></span></div>
+          <h3 data-i="pl1t"></h3><p data-i="pl1"></p>
+        </div>
+        <div class="pl p-navy">
+          <div class="pl-top"><span class="ic"><svg><use href="#i-star"/></svg></span><span class="num"><b>69 617</b><small data-i="pl2n"></small></span></div>
+          <h3 data-i="pl2t"></h3><p data-i="pl2"></p>
+        </div>
+        <a class="pl p-light" href="#contact">
+          <div class="pl-top"><span class="ic"><svg><use href="#i-send"/></svg></span><span class="num"><b>СТМ</b><small data-i="pl3n"></small></span></div>
+          <h3 data-i="pl3t"></h3><p data-i="pl3"></p>
+          <span class="more"><span data-i="pl3c"></span><svg><use href="#i-arrow"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section id="what">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="kicker" data-i="w_k"></span><h2 data-i="w_t"></h2></div>
+        <p class="lead" data-i="w_l"></p>
+      </div>
+      <div class="sectors" id="sectors"></div>
+      <div class="what">
+        <div class="panel own">
+          <h3 data-i="o_t"></h3>
+          <p data-i="o_l"></p>
+          <div class="logos"><span><img src="img/logo-salute.png" alt="Salute"></span><span><img src="img/logo-aplus.png" alt="A+"></span></div>
+        </div>
+        <div class="panel stm">
+          <span class="tag" data-i="stm_tag"></span>
+          <h3 data-i="stm_t"></h3>
+          <p data-i="stm_l"></p>
+          <ul class="ticks" data-i="stm_list"></ul>
+        </div>
+      </div>
+      <div class="clients-row">
+        <span data-i="cl_t"></span>
+        <div class="clients">
+          <div class="cl"><img src="img/cl-enear.webp" alt="Enear"></div>
+          <div class="cl"><img src="img/cl-enzo.webp" alt="Enzo"></div>
+          <div class="cl word"><span>Чистый дом</span></div>
+          <div class="cl more"><span data-i="cl_more"></span></div>
+        </div>
+      </div>
+      <div class="steps4" data-i="stm_steps"></div>
+    </div>
+  </section>
+
+  <section id="catalog" class="catalog">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="kicker" data-i="c_k"></span><h2 data-i="c_t"></h2></div>
+        <p class="lead" data-i="c_l"></p>
+      </div>
+      <div class="bar">
+        <div class="filters" role="group">
+          <button class="chip" id="f-all" data-f="all" aria-pressed="true" data-i="f_all"></button>
+          <button class="chip" id="f-laundry" data-f="laundry" aria-pressed="false" data-i="f_laundry"></button>
+          <button class="chip" id="f-kitchen" data-f="kitchen" aria-pressed="false" data-i="f_kitchen"></button>
+          <button class="chip" id="f-clean" data-f="clean" aria-pressed="false" data-i="f_clean"></button>
+          <button class="chip" id="f-care" data-f="care" aria-pressed="false" data-i="f_care"></button>
+        </div>
+        <span class="note" data-i="c_note"></span>
+      </div>
+      <div class="grid" id="grid"></div>
+    </div>
+  </section>
+
+  <section id="production" class="prod-band">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="kicker" data-i="p_k"></span><h2 data-i="p_t"></h2></div>
+        <p class="lead" data-i="p_l"></p>
+      </div>
+      <div class="figures">
+        <div class="fig"><b>60<em> т</em></b><span data-i="fg1"></span></div>
+        <div class="fig"><b>320</b><span data-i="fg2"></span></div>
+        <div class="fig"><b>130</b><span data-i="fg3"></span></div>
+      </div>
+      <div class="flow">
+        <div><svg><use href="#i-mix"/></svg><h3 data-i="fl1t"></h3><p data-i="fl1"></p></div>
+        <div><svg><use href="#i-check"/></svg><h3 data-i="fl2t"></h3><p data-i="fl2"></p></div>
+        <div><svg><use href="#i-bottle"/></svg><h3 data-i="fl3t"></h3><p data-i="fl3"></p></div>
+        <div><svg><use href="#i-truck"/></svg><h3 data-i="fl4t"></h3><p data-i="fl4"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="partners">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="kicker" data-i="a_k"></span><h2 data-i="a_t"></h2></div>
+        <p class="lead" data-i="a_l"></p>
+      </div>
+      <div class="aud">
+        <div><h3 data-i="a1t"></h3><ul data-i="a1"></ul></div>
+        <div><h3 data-i="a2t"></h3><ul data-i="a2"></ul></div>
+        <div><h3 data-i="a3t"></h3><ul data-i="a3"></ul></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="reviews" class="reviews">
+    <div class="wrap">
+      <div class="head">
+        <div><span class="kicker" data-i="r_k"></span><h2 data-i="r_t"></h2></div>
+        <p class="lead" data-i="r_l"></p>
+      </div>
+      <div class="rv" id="rv"></div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="wrap contact">
+      <div>
+        <span class="kicker" data-i="k_k"></span>
+        <h2 data-i="k_t"></h2>
+        <p class="lead" style="margin-top:18px" data-i="k_l"></p>
+        <div class="ch">
+          <div class="row tg">
+            <span class="ic"><svg><use href="#i-send"/></svg></span>
+            <span class="tx"><small>Telegram</small><span>@rakhimov_junior</span></span>
+            <a class="act" href="https://t.me/rakhimov_junior" target="_blank" rel="noopener" data-i="k_write"></a>
+          </div>
+          <div id="phones" style="display:grid;gap:10px"></div>
+        </div>
+        <p class="firm"><span data-i="k_firm"></span> · <a href="https://uzum.uz/ru/shop/turkshanay" target="_blank" rel="noopener" data-i="k_uzum"></a></p>
+      </div>
+      <form id="lead" novalidate>
+        <h3 data-i="fm_t"></h3>
+        <p data-i="fm_s"></p>
+        <div class="two">
+          <label for="name"><span data-i="fm_name"></span><input id="name" required autocomplete="organization"></label>
+          <label for="city"><span data-i="fm_city"></span><input id="city" autocomplete="address-level2"></label>
+        </div>
+        <label for="type"><span data-i="fm_type"></span><select id="type"></select></label>
+        <label for="msg"><span data-i="fm_msg"></span><textarea id="msg"></textarea></label>
+        <button class="btn" type="submit" id="send"><span data-i="fm_send"></span><svg><use href="#i-arrow"/></svg></button>
+        <div class="out" id="out" hidden>
+          <span data-i="fm_out"></span>
+          <pre id="outText"></pre>
+          <button type="button" id="copyMsg" data-i="fm_copy"></button>
+        </div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fl"><span><img src="img/logo-salute.png" alt="Salute"></span><span><img src="img/logo-aplus.png" alt="A+"></span></div>
+    <span>© 2026 Turk Shanay Biznes · <span data-i="ft"></span></span>
+  </div>
+</footer>
+
+<script>
+const T={
+ru:{sectors:[["i-home", "Бытовая химия", "Розница, сети, маркетплейсы", ["Гели для стирки", "Средства для посуды", "Отбеливатели", "Жидкое мыло"]], ["i-cutlery", "HoReCa", "Рестораны, кафе, отели, фастфуд", ["Обезжириватели", "Средства для посуды 5 л", "Мыло для рук", "Средства для санузлов"]], ["i-spray", "Клининг", "Клининговые компании, бизнес-центры", ["Универсальные средства", "Для стёкол", "Для полов", "Для сантехники"]], ["i-car", "Автохимия", "Автомойки и детейлинг", ["Активная пена", "Автошампуни", "Очистители дисков", "Стеклоомыватели"]], ["i-washer", "Прачечные и химчистки", "Прачечные, химчистки, гостиничное бельё", ["Гели для стирки", "Отбеливатели", "Пятновыводители", "Кондиционеры"]], ["i-factory", "Производства", "Пищевые и промышленные предприятия", ["Кислотные средства", "Щелочные средства", "Обезжириватели", "Средства для труб"]]],cats:"<div><h4>Бытовая химия</h4><ul><li>Гели для стирки</li><li>Средства для посуды</li><li>Отбеливатели</li><li>Жидкое и крем-мыло</li><li>Чистящие порошки</li><li>Средства для труб</li><li>Средства для стёкол</li><li>Антижир</li></ul></div><div><h4>Профессиональная химия</h4><ul><li>Обезжириватели для кухонь</li><li>Кислотные средства</li><li>Щелочные средства</li><li>Химия для HoReCa</li><li>Химия для клининга</li><li>Канистры 5 л для бизнеса</li></ul></div>",pl3c:"Обсудить сотрудничество",pl3:"Любые категории бытовой химии и производство под вашим брендом.",pl3t:"Ждём ваших предложений",pl3n:"и любые категории",pl2:"Оценка 4,7 от 15 808 покупателей. Вы берёте товар с доказанным спросом.",pl2t:"Уже продаётся на маркетплейсах",pl2n:"заказов на Uzum Market",pl1:"Мы производитель, а не посредник. Сделаем любую бытовую и профессиональную химию по цене завода.",pl1t:"Первые руки — самая низкая цена",pl1n:"продукции в месяц",nav_what:"Что производим",nav_cat:"Продукция",nav_prod:"Производство",nav_part:"Партнёрам",nav_cont:"Контакты",nav_cta:"Получить прайс",
+h_k:"Завод бытовой химии · Ташкент",
+h_t:"Бытовая и профессиональная химия <span class=\"accent\">от производителя</span>",
+h_l:"Цены первых рук: без посредников и наценок. Произведём любую позицию под ваш рынок или под ваш бренд.",
+h_c1:"Получить оптовый прайс",h_c2:"Смотреть продукцию",
+t1:"Своё производство",t2:"Цены завода",t3:"Отгрузка партиями",
+s1:"заказов на Uzum Market",s2:"оценка 15 808 покупателей",s3:"продукции в месяц",s4:"позиции в ассортименте",
+w_k:"Что мы производим",w_t:"Любая бытовая и профессиональная химия",w_l:"Продаём свои бренды Salute и A+, выпускаем продукцию под вашей маркой и запускаем новые позиции по вашему запросу.",
+o_t:"Собственные бренды Salute и A+",o_l:"Полная линейка для дома, кухни и стирки. Этикетки на русском и узбекском, спрос подтверждён продажами на Uzum Market. Готово к полке с первого дня.",
+stm_tag:"СТМ · Private label",stm_t:"Производим под вашей торговой маркой",stm_l:"Вы продаёте свой бренд, мы отвечаем за рецептуру, розлив и стабильное качество каждой партии.",
+stm_list:"<li>Рецептура, запах и цвет под ваш рынок</li><li>Тара от 500 мл до 25 кг</li><li>Образцы и пробная партия до запуска</li><li>Одинаковое качество от партии к партии</li>",
+cl_t:"Уже производим для брендов",cl_more:"и другие",
+stm_steps:"<div>Заявка и задача</div><div>Образцы и согласование</div><div>Ваша этикетка</div><div>Производство и отгрузка</div>",
+c_k:"Продукция",c_t:"Хиты продаж",c_l:"Отсортировано по продажам за июль–октябрь 2026. Полный ассортимент из 54 позиций отправим по запросу.",
+c_note:"Рейтинги покупателей с Uzum Market",
+f_all:"Все",f_laundry:"Стирка",f_kitchen:"Кухня",f_clean:"Уборка",f_care:"Гигиена",
+hit:"Хит",rev:"отзывов",opt:"Для опта и HoReCa",
+p_k:"Производство",p_t:"Полный цикл под одной крышей в Ташкенте",p_l:"Не перепродаём чужое: сырьё, рецептуры, розлив и контроль качества у нас на площадке.",
+fg1:"продукции выпускаем в месяц",fg2:"флаконов в час на автоматической линии",fg3:"канистр по 5 л в час",
+fl1t:"Смешивание",fl1:"Импортное сырьё от проверенных поставщиков, промышленные миксеры на 1 и 2 тонны.",
+fl2t:"Контроль технолога",fl2:"Технологи проверяют густоту, запах и состав каждой партии.",
+fl3t:"Розлив и упаковка",fl3:"Автолиния: дозирование, укупорка, этикетка, термоплёнка.",
+fl4t:"Склад и отгрузка",fl4:"Учёт остатков, сборка заказа и своя доставка по Ташкенту.",
+y_k:"Почему выбирают нас",y_t:"За что нас ценят покупатели",y_l:"Это не наши обещания, а то, что чаще всего пишут в отзывах.",
+y1t:"Концентрированная формула",y1:"Небольшой дозы хватает на полную загрузку машины. Канистры 5 л служат месяцами.",
+y2t:"Без резкого запаха",y2:"Мягкие отдушки, на белье и посуде не остаётся запаха химии.",
+y3t:"Бережно к ткани и цвету",y3:"Гели не вымывают краску и не истончают волокна при ежедневной стирке.",
+y4t:"Безопасно для рук",y4:"Средства для посуды и мыло, которые не сушат кожу.",
+y5t:"От 400 г до 5 л",y5:"Розничные фасовки и большие канистры для кафе, гостиниц и клининга.",
+y6t:"Цена производителя",y6:"Без посредников, поэтому у партнёров остаётся хорошая наценка.",
+a_k:"Сотрудничество",a_t:"Ждём ваших предложений",a_l:"Дистрибуция, сети, HoReCa или СТМ: расскажите о задаче, предложим ассортимент и цену завода.",
+a1t:"Дистрибьюторам",a1:"<li>Цены производителя</li><li>Эксклюзив на регион обсуждаем</li><li>Помощь с карточками для маркетплейсов</li>",
+a2t:"Магазинам и сетям",a2:"<li>Позиции с подтверждённым спросом</li><li>Розничные фасовки от 400 г до 2 л</li><li>Образцы для теста</li>",
+a3t:"HoReCa и клинингу",a3:"<li>Канистры 5 л для кухни и прачечной</li><li>Антижир, гель для посуды, мыло</li><li>Регулярные поставки</li>",
+r_k:"Маркетплейсы",r_t:"Хорошо продаёмся на маркетплейсах",r_l:"69 617 заказов и 15 808 отзывов на Uzum Market, средняя оценка 4,7. Вот что пишут покупатели.",
+reviews:[["Пользуюсь уже месяц, стираю по 4–5 раз в день, а ушла только половина канистры. Очень выгодно.","Севара","гель для стирки Salute 5 л"],["Беру уже в четвёртый раз. Отлично отстирывает.","Нигора","гель для стирки Salute"],["Думала, не отстирает скатерти и полотенца. Отстирал чисто, бельё мягкое и ароматное.","Покупательница","гель для стирки Salute"],["Запах приятный, хорошо пенится, со своей задачей справился. Буду заказывать ещё.","Татьяна","гель для стирки Salute"],["Запах отличный, густой. Закончится, закажу снова. Всем советую.","Муниса","гель для стирки Salute"]],
+k_k:"Контакты",k_t:"Обсудим поставки",k_l:"Пишите в Telegram или WhatsApp, звоните. Отвечаем на русском и узбекском.",
+k_write:"Написать",k_firm:"ЧП «TURK SHANAY BIZNES», Ташкент",k_uzum:"Магазин на Uzum",
+copy:"Копировать",copied:"Скопировано",phone:"Телефон",
+fm_t:"Заявка на прайс",fm_s:"Заполните поля, и заявка откроется в WhatsApp, останется только отправить.",
+fm_name:"Имя и компания",fm_city:"Город",fm_type:"Вы",fm_msg:"Что интересует",
+ph_name:"Айгерим, ТОО «Таза Үй»",ph_city:"Алматы",ph_msg:"Гели для стирки 5 л, нужен прайс и образцы",ph_need:"Укажите имя или компанию",
+types:["Дистрибьютор","Магазин / сеть","HoReCa / клининг","СТМ под свой бренд","Другое"],
+fm_send:"Отправить заявку",fm_out:"Если WhatsApp не открылся, скопируйте текст и отправьте в Telegram или на любой номер:",fm_copy:"Скопировать текст",
+msg:["Здравствуйте! Заявка с сайта Salute.","Имя/компания","Город","Тип","Интересует","прайс"],
+ft:"бытовая химия от производителя"},
+kz:{sectors:[["i-home", "Тұрмыстық химия", "Бөлшек сауда, желілер, маркетплейстер", ["Кір жуу гельдері", "Ыдыс жуу құралдары", "Ағартқыштар", "Сұйық сабын"]], ["i-cutlery", "HoReCa", "Мейрамханалар, кафелер, қонақүйлер, фастфуд", ["Майсыздандырғыштар", "5 л ыдыс жуу құралдары", "Қол сабыны", "Санторапқа арналған құралдар"]], ["i-spray", "Клининг", "Клининг компаниялары, бизнес-орталықтар", ["Әмбебап құралдар", "Әйнекке", "Еденге", "Сантехникаға"]], ["i-car", "Автохимия", "Автожуу және детейлинг", ["Белсенді көбік", "Автошампундер", "Диск тазалағыштар", "Әйнек жуғыштар"]], ["i-washer", "Кір жуу орындары мен химчисткалар", "Кір жуу орындары, химчисткалар, қонақүй кір-жуы", ["Кір жуу гельдері", "Ағартқыштар", "Дақ кетіргіштер", "Кондиционерлер"]], ["i-factory", "Өндірістер", "Тамақ және өнеркәсіп кәсіпорындары", ["Қышқылды құралдар", "Сілтілі құралдар", "Майсыздандырғыштар", "Құбыр тазалағыштар"]]],cats:"<div><h4>Тұрмыстық химия</h4><ul><li>Кір жуу гельдері</li><li>Ыдыс жуу құралдары</li><li>Ағартқыштар</li><li>Сұйық және крем-сабын</li><li>Тазалағыш ұнтақтар</li><li>Құбыр тазалағыштар</li><li>Әйнек құралдары</li><li>Майға қарсы құрал</li></ul></div><div><h4>Кәсіби химия</h4><ul><li>Ас үйге арналған майсыздандырғыштар</li><li>Қышқылды құралдар</li><li>Сілтілі құралдар</li><li>HoReCa-ға арналған химия</li><li>Клинингке арналған химия</li><li>Бизнеске 5 л канистрлер</li></ul></div>",pl3c:"Ынтымақтастықты талқылау",pl3:"Тұрмыстық химияның кез келген санаты және сіздің брендіңізбен өндіріс.",pl3t:"Ұсыныстарыңызды күтеміз",pl3n:"және кез келген санат",pl2:"15 808 сатып алушыдан 4,7 баға. Сұранысы дәлелденген тауарды аласыз.",pl2t:"Маркетплейстерде сатылып жатыр",pl2n:"Uzum Market-тегі тапсырыс",pl1:"Біз делдал емес, өндірушіміз. Кез келген тұрмыстық және кәсіби химияны зауыт бағасымен жасаймыз.",pl1t:"Бірінші қол — ең төмен баға",pl1n:"айына өнім",nav_what:"Не шығарамыз",nav_cat:"Өнімдер",nav_prod:"Өндіріс",nav_part:"Серіктестерге",nav_cont:"Байланыс",nav_cta:"Прайс алу",
+h_k:"Тұрмыстық химия зауыты · Ташкент",
+h_t:"Тұрмыстық және кәсіби химия <span class=\"accent\">өндірушіден</span>",
+h_l:"Бірінші қол бағасы: делдалсыз және үстемесіз. Кез келген позицияны нарығыңызға немесе брендіңізге шығарамыз.",
+h_c1:"Көтерме прайс алу",h_c2:"Өнімдерді көру",
+t1:"Өз өндірісіміз",t2:"Зауыт бағасы",t3:"Партиямен жөнелту",
+s1:"Uzum Market-тегі тапсырыс",s2:"15 808 сатып алушының бағасы",s3:"айына өнім",s4:"ассортименттегі позиция",
+w_k:"Не шығарамыз",w_t:"Кез келген тұрмыстық және кәсіби химия",w_l:"Өз брендтеріміз Salute пен A+ сатамыз, сіздің белгіңізбен өнім шығарамыз және сұранысыңыз бойынша жаңа позицияларды іске қосамыз.",
+o_t:"Өз брендтеріміз Salute және A+",o_l:"Үйге, ас үйге және кір жууға арналған толық желі. Орыс және өзбек тілдеріндегі затбелгілер, сұраныс Uzum Market-тегі сатылыммен расталған. Бірінші күннен сөреге дайын.",
+stm_tag:"СТМ · Private label",stm_t:"Сіздің сауда белгіңізбен шығарамыз",stm_l:"Сіз өз брендіңізді сатасыз, ал рецептура, құю және әр партияның тұрақты сапасы біздің жауапкершілігімізде.",
+stm_list:"<li>Нарығыңызға сай рецептура, иіс және түс</li><li>500 мл-ден 25 кг-ға дейінгі ыдыс</li><li>Іске қосу алдында үлгілер мен сынақ партия</li><li>Партиядан партияға бірдей сапа</li>",
+cl_t:"Қазір мына брендтерге шығарамыз",cl_more:"және басқалар",
+stm_steps:"<div>Өтінім және міндет</div><div>Үлгілер және келісу</div><div>Сіздің затбелгіңіз</div><div>Өндіріс және жөнелту</div>",
+c_k:"Өнімдер",c_t:"Сату хиттері",c_l:"2026 жылғы шілде–қазан сатылымы бойынша реттелген. 54 позициядан тұратын толық ассортиментті сұрау бойынша жібереміз.",
+c_note:"Сатып алушылар рейтингі Uzum Market-тен",
+f_all:"Барлығы",f_laundry:"Кір жуу",f_kitchen:"Ас үй",f_clean:"Тазалау",f_care:"Гигиена",
+hit:"Хит",rev:"пікір",opt:"Көтерме және HoReCa үшін",
+p_k:"Өндіріс",p_t:"Ташкенттегі бір шаңырақ астындағы толық цикл",p_l:"Бөтен өнімді қайта сатпаймыз: шикізат, рецептура, құю және сапа бақылауы өз алаңымызда.",
+fg1:"айына шығаратын өнім",fg2:"автожеліде сағатына құты",fg3:"сағатына 5 л канистр",
+fl1t:"Араластыру",fl1:"Сенімді жеткізушілерден импорттық шикізат, 1 және 2 тонналық өнеркәсіптік миксерлер.",
+fl2t:"Технолог бақылауы",fl2:"Технологтар әр партияның қоюлығын, иісін және құрамын тексереді.",
+fl3t:"Құю және қаптау",fl3:"Автожелі: мөлшерлеу, қақпақ жабу, затбелгі, термоқаптама.",
+fl4t:"Қойма және жөнелту",fl4:"Қалдық есебі, тапсырысты жинау және Ташкент бойынша өз жеткізуіміз.",
+y_k:"Бізді неге таңдайды",y_t:"Сатып алушылар бізді не үшін бағалайды",y_l:"Бұл біздің уәдеміз емес, пікірлерде жиі жазылатын нәрселер.",
+y1t:"Концентрленген формула",y1:"Аз мөлшері машинаның толық жүктемесіне жетеді. 5 л канистр айларға жетеді.",
+y2t:"Өткір иіссіз",y2:"Жұмсақ хош иіс, кір мен ыдыста химия иісі қалмайды.",
+y3t:"Мата мен түске ұқыпты",y3:"Гельдер күнделікті жуғанда бояуды жуып кетпейді және талшықты жұқартпайды.",
+y4t:"Қолға қауіпсіз",y4:"Теріні құрғатпайтын ыдыс жуу құралдары мен сабын.",
+y5t:"400 г-нан 5 л-ге дейін",y5:"Бөлшек қаптамалар және кафе, қонақүй, клинингке үлкен канистрлер.",
+y6t:"Өндіруші бағасы",y6:"Делдалсыз, сондықтан серіктестерде жақсы үстеме қалады.",
+a_k:"Ынтымақтастық",a_t:"Ұсыныстарыңызды күтеміз",a_l:"Дистрибуция, желілер, HoReCa немесе СТМ: міндетіңізді айтыңыз, ассортимент пен зауыт бағасын ұсынамыз.",
+a1t:"Дистрибьюторларға",a1:"<li>Өндіруші бағасы</li><li>Өңірге эксклюзивті талқылаймыз</li><li>Маркетплейс карточкаларымен көмек</li>",
+a2t:"Дүкендер мен желілерге",a2:"<li>Сұранысы расталған позициялар</li><li>400 г-нан 2 л-ге дейінгі бөлшек қаптамалар</li><li>Сынауға арналған үлгілер</li>",
+a3t:"HoReCa және клинингке",a3:"<li>Ас үй мен кір жуу орнына 5 л канистрлер</li><li>Майға қарсы құрал, ыдыс жуу гелі, сабын</li><li>Тұрақты жеткізілім</li>",
+r_k:"Маркетплейстер",r_t:"Маркетплейстерде жақсы сатыламыз",r_l:"Uzum Market-те 69 617 тапсырыс және 15 808 пікір, орташа баға 4,7. Сатып алушылар былай жазады.",
+reviews:[["Бір айдан бері қолданамын, күніне 4–5 рет жуамын, ал канистрдің жартысы ғана кетті. Өте тиімді.","Севара","Salute кір жуу гелі 5 л"],["Төртінші рет алып отырмын. Керемет жуады.","Нигора","Salute кір жуу гелі"],["Дастарқан мен сүлгілерді жуа алмайды деп ойлағанмын. Таза жуды, кір жұмсақ әрі хош иісті.","Сатып алушы","Salute кір жуу гелі"],["Иісі жағымды, жақсы көпіршиді, міндетін орындады. Тағы тапсырыс беремін.","Татьяна","Salute кір жуу гелі"],["Иісі керемет, қою. Біткен соң тағы тапсырыс беремін. Барлығына ұсынамын.","Муниса","Salute кір жуу гелі"]],
+k_k:"Байланыс",k_t:"Жеткізілімді талқылайық",k_l:"Telegram немесе WhatsApp-қа жазыңыз, қоңырау шалыңыз. Орыс және өзбек тілдерінде жауап береміз.",
+k_write:"Жазу",k_firm:"ЖК «TURK SHANAY BIZNES», Ташкент",k_uzum:"Uzum-дағы дүкен",
+copy:"Көшіру",copied:"Көшірілді",phone:"Телефон",
+fm_t:"Прайсқа өтінім",fm_s:"Өрістерді толтырыңыз, өтінім WhatsApp-та ашылады, тек жіберу қалады.",
+fm_name:"Аты және компания",fm_city:"Қала",fm_type:"Сіз",fm_msg:"Не қызықтырады",
+ph_name:"Айгерім, «Таза Үй» ЖШС",ph_city:"Алматы",ph_msg:"5 л кір жуу гелі, прайс пен үлгілер керек",ph_need:"Атыңызды немесе компанияны жазыңыз",
+types:["Дистрибьютор","Дүкен / желі","HoReCa / клининг","Өз брендіме СТМ","Басқа"],
+fm_send:"Өтінім жіберу",fm_out:"WhatsApp ашылмаса, мәтінді көшіріп, Telegram-ға немесе кез келген нөмірге жіберіңіз:",fm_copy:"Мәтінді көшіру",
+msg:["Сәлеметсіз бе! Salute сайтынан өтінім.","Аты/компания","Қала","Түрі","Қызықтырады","прайс"],
+ft:"өндірушіден тұрмыстық химия"}};
+
+const P=[
+ {hit:1,f:"laundry",b:"Salute",v:"2 · 5 л",r:"4,9",n:1369,ru:"Гель для стирки, автомат",kz:"Кір жуу гелі, автомат",img:[["salute-gel5-red","#F49AAE"],["salute-gel5-blue","#3BA7E0"],["salute-gel2-red","#E50D2F"]]},
+ {hit:1,f:"care",b:"Salute",v:"500 мл · 1 л · 5 л",ru:"Жидкое крем-мыло",kz:"Сұйық крем-сабын",img:[["salute-cream-blue","#5CC0EA"],["salute-cream-pink","#EE6FA5"]]},
+ {hit:1,f:"laundry",b:"A+",v:"1 л",r:"4,7",n:1914,ru:"Отбеливатель для белого белья",kz:"Ақ кірге арналған ағартқыш",img:[["aplus-bleach","#2457B0"]]},
+ {hit:1,f:"kitchen",b:"Salute",v:"600 мл",r:"4,8",n:1323,ru:"Антижир для плит и духовок",kz:"Плита мен пешке арналған майға қарсы құрал",img:[["salute-antifat","#3FA9E5"]]},
+ {f:"laundry",b:"Salute",v:"1 л",r:"4,7",n:541,ru:"Отбеливатель «Безупречная белизна»",kz:"«Мінсіз ақтық» ағартқышы",img:[["salute-bleach-red","#E50D2F"],["salute-bleach-blue","#2457B0"]]},
+ {f:"care",b:"A+",v:"500 мл · 5 л",r:"4,6",n:830,ru:"Жидкое мыло для рук",kz:"Қолға арналған сұйық сабын",img:[["aplus-soap-blue","#4FB6E3"],["aplus-soap-yellow","#F4D21F"],["aplus-soap-red","#E5323F"],["aplus-soap05","#F07A8C"]]},
+ {f:"laundry",b:"Salute",v:"5 л",r:"4,9",n:1369,ru:"Гель для стирки 3X",kz:"3X кір жуу гелі",img:[["salute-gel5-silver","#6FD1C2"]]},
+ {f:"kitchen",b:"A+",v:"5 л",r:"4,6",n:4103,ru:"Гель для мытья посуды",kz:"Ыдыс жуу гелі",img:[["aplus-dish-rasp","#E8364F"],["aplus-dish-apple","#2BA84A"],["aplus-dish-lemon","#F4D21F"]]},
+ {f:"kitchen",b:"Salute",v:"500 мл · 5 л",r:"4,8",n:142,ru:"Гель для мытья посуды",kz:"Ыдыс жуу гелі",img:[["salute-dish5","#4CC34A"],["salute-dish05","#1E7A32"]]},
+ {f:"clean",b:"Salute",v:"500 мл",r:"4,8",n:573,ru:"Средство для стёкол и зеркал",kz:"Әйнек пен айнаға арналған құрал",img:[["salute-glass","#4FB6E3"]]},
+ {f:"clean",b:"Salute Turbo",v:"300 · 500 г",ru:"Средство для прочистки труб",kz:"Құбыр тазалағыш құрал",img:[["salute-turbo-500","#F26A1B"],["salute-turbo-300","#3A3A3A"]]},
+ {f:"clean",b:"Salute",v:"400 г",r:"4,8",n:579,ru:"Чистящий порошок",kz:"Тазалағыш ұнтақ",img:[["salute-chistol","#F07C1E"]]}
+];
+const phones=["+998 99 080 87 45","+998 90 176 86 87","+998 90 934 34 00","+998 99 861 64 66"];
+const star='<svg><use href="#i-star"/></svg>';
+let L="ru", filter="all";
+const nf=n=>n.toLocaleString('ru-RU').replace(/ /g,' ');
+
+function renderGrid(){
+  const g=document.getElementById('grid'), t=T[L];
+  g.innerHTML=P.map((p,i)=>`<article class="card" data-f="${p.f}" style="--c:${p.img[0][1]}"${filter!=='all'&&p.f!==filter?' hidden':''}>
+    <div class="plinth">${p.hit?`<span class="hit">${star}${t.hit}</span>`:''}<img id="im${i}" src="img/${p.img[0][0]}.jpg" alt="${p.b} — ${p[L]}" loading="lazy"></div>
+    <div class="cbody"><span class="meta">${p.b}${p.v?` <i>· ${p.v}</i>`:''}</span><h3>${p[L]}</h3>
+    <div class="sw">${p.img.length>1?p.img.map((v,j)=>`<button type="button" style="background:${v[1]}" aria-pressed="${j===0}" aria-label="${j+1}" data-p="${i}" data-v="${j}"></button>`).join(''):''}</div>
+    <div class="foot">${p.r?`<b>${star}${p.r}</b><span>${nf(p.n)} ${t.rev}</span>`:`<span>${t.opt}</span>`}</div></div></article>`).join('');
+  g.querySelectorAll('.sw button').forEach(d=>d.addEventListener('click',()=>{
+    const p=P[d.dataset.p], v=p.img[d.dataset.v], card=d.closest('.card'), im=document.getElementById('im'+d.dataset.p);
+    im.src=`img/${v[0]}.jpg`; card.style.setProperty('--c',v[1]);
+    d.parentNode.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',x===d));
+  }));
+}
+function renderSectors(){
+  document.getElementById('sectors').innerHTML=T[L].sectors.map(x=>`<div class="sec"><span class="si"><svg><use href="#${x[0]}"/></svg></span><h3>${x[1]}</h3><small>${x[2]}</small><p>${x[3].map(i=>`<span>${i}</span>`).join('')}</p></div>`).join('');
+}
+function renderReviews(){
+  document.getElementById('rv').innerHTML=T[L].reviews.map(r=>`<figure><div class="stars">${star.repeat(5)}</div><blockquote>${r[0]}</blockquote><figcaption><b>${r[1]}</b> · ${r[2]}</figcaption></figure>`).join('');
+}
+function renderPhones(){
+  const box=document.getElementById('phones'), t=T[L];
+  box.innerHTML=phones.map((p,i)=>`<div class="row"><span class="ic"><svg><use href="#i-phone"/></svg></span><span class="tx"><small>${t.phone}${i===0?' · Telegram · WhatsApp':' · WhatsApp'}</small><span>${p}</span></span>${i===0?`<a class="act" href="https://t.me/+${p.replace(/\D/g,'')}" target="_blank" rel="noopener">Telegram</a>`:''}<a class="act" href="https://wa.me/${p.replace(/\D/g,'')}" target="_blank" rel="noopener">WhatsApp</a><button class="act" type="button">${t.copy}</button></div>`).join('');
+  box.querySelectorAll('.row').forEach((row,i)=>row.querySelector('button').addEventListener('click',e=>copy(phones[i],e.currentTarget,'copy')));
+}
+function setLang(l){
+  L=l; const t=T[l];
+  document.documentElement.lang=l==='kz'?'kk':'ru';
+  document.querySelectorAll('[data-i]').forEach(el=>{const v=t[el.dataset.i]; if(typeof v==='string') el.innerHTML=v});
+  document.getElementById('name').placeholder=t.ph_name;
+  document.getElementById('city').placeholder=t.ph_city;
+  document.getElementById('msg').placeholder=t.ph_msg;
+  const sel=document.getElementById('type'),k=sel.selectedIndex;
+  sel.innerHTML=t.types.map(x=>`<option>${x}</option>`).join(''); sel.selectedIndex=Math.max(0,k);
+  document.querySelectorAll('.lang button').forEach(b=>b.setAttribute('aria-pressed',b.dataset.l===l));
+  renderGrid(); renderSectors(); renderReviews(); renderPhones();
+  try{localStorage.setItem('lang',l)}catch(e){}
+}
+document.querySelectorAll('.lang button').forEach(b=>b.addEventListener('click',()=>setLang(b.dataset.l)));
+document.querySelectorAll('.chip').forEach(b=>b.addEventListener('click',()=>{
+  filter=b.dataset.f;
+  document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',x===b));
+  document.querySelectorAll('#grid .card').forEach(c=>c.hidden=!(filter==='all'||c.dataset.f===filter));
+}));
+function copy(text,btn,key){
+  const done=()=>{btn.textContent=T[L].copied;setTimeout(()=>btn.textContent=T[L][key],1400)};
+  const sel=()=>{const el=btn.closest('.row,.out').querySelector('.tx span,pre');const r=document.createRange();r.selectNodeContents(el);const s=getSelection();s.removeAllRanges();s.addRange(r)};
+  try{navigator.clipboard.writeText(text).then(done,sel)}catch(e){sel()}
+}
+document.getElementById('lead').addEventListener('submit',e=>{
+  e.preventDefault();
+  const name=document.getElementById('name'),m=T[L].msg;
+  if(!name.value.trim()){name.placeholder=T[L].ph_need;name.focus();return}
+  const text=`${m[0]}\n${m[1]}: ${name.value.trim()}\n${m[2]}: ${document.getElementById('city').value.trim()||'—'}\n${m[3]}: ${document.getElementById('type').value}\n${m[4]}: ${document.getElementById('msg').value.trim()||m[5]}`;
+  document.getElementById('outText').textContent=text;
+  document.getElementById('out').hidden=false;
+  const a=document.createElement('a');a.href='https://wa.me/998990808745?text='+encodeURIComponent(text);a.target='_blank';a.rel='noopener';document.body.appendChild(a);a.click();a.remove();
+});
+document.getElementById('copyMsg').addEventListener('click',e=>copy(document.getElementById('outText').textContent,e.currentTarget,'fm_copy'));
+let start='ru';
+if(location.hash==='#kz') start='kz';
+else if(location.hash!=='#ru'){ try{ start=localStorage.getItem('lang')||'ru' }catch(e){} }
+setLang(start);
+</script>
+
+</body>
+</html>
