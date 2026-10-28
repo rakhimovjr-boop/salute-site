@@ -20,8 +20,8 @@
   --red:#E50D2F; --red-ink:#FFFFFF; --sky:#3FA9E5; --skysoft:#E3F2FC; --sun:#FFC20E;
   --navy:#18214F; --navy-fg:#EEF2FF;
   --shadow:0 1px 2px rgba(24,33,79,.06),0 12px 32px -16px rgba(24,33,79,.28);
-  --f-display:"Rubik","Arial Black",system-ui,sans-serif;
-  --f-body:"Manrope",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --f-display:"Rubik","Arial Black","PingFang SC","Microsoft YaHei","Noto Sans SC",system-ui,sans-serif;
+  --f-body:"Manrope",system-ui,-apple-system,"Segoe UI","PingFang SC","Microsoft YaHei","Noto Sans SC",sans-serif;
   --r:20px; --max:1180px;
 }
 @media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
@@ -337,6 +337,8 @@ footer.site .fl img{height:24px;width:auto}
 .cl.word{background:#fff}
 .cl.word span{color:#18214F;font:800 22px var(--f-display);text-shadow:none;letter-spacing:-.01em}
 .cl.more{background:transparent;border-style:dashed}
+:lang(zh-CN) .kicker,:lang(zh-CN) .meta{letter-spacing:.04em}
+:lang(zh-CN) h1,:lang(zh-CN) h2{letter-spacing:0}
 </style>
 
 </head>
@@ -378,6 +380,7 @@ footer.site .fl img{height:24px;width:auto}
       <div class="lang" role="group" aria-label="Язык / Тіл">
         <button type="button" id="l-ru" data-l="ru" aria-pressed="true">RU</button>
         <button type="button" id="l-kz" data-l="kz" aria-pressed="false">KZ</button>
+        <button type="button" id="l-zh" data-l="zh" aria-pressed="false">中文</button>
       </div>
       <a class="btn" href="#contact" data-i="nav_cta"></a>
     </div>
@@ -405,7 +408,7 @@ footer.site .fl img{height:24px;width:auto}
       </div>
       <div class="pillars">
         <div class="pl p-red">
-          <div class="pl-top"><span class="ic"><svg><use href="#i-factory"/></svg></span><span class="num"><b>60 т</b><small data-i="pl1n"></small></span></div>
+          <div class="pl-top"><span class="ic"><svg><use href="#i-factory"/></svg></span><span class="num"><b data-i="u60"></b><small data-i="pl1n"></small></span></div>
           <h3 data-i="pl1t"></h3><p data-i="pl1"></p>
         </div>
         <div class="pl p-navy">
@@ -413,7 +416,7 @@ footer.site .fl img{height:24px;width:auto}
           <h3 data-i="pl2t"></h3><p data-i="pl2"></p>
         </div>
         <a class="pl p-light" href="#contact">
-          <div class="pl-top"><span class="ic"><svg><use href="#i-send"/></svg></span><span class="num"><b>СТМ</b><small data-i="pl3n"></small></span></div>
+          <div class="pl-top"><span class="ic"><svg><use href="#i-send"/></svg></span><span class="num"><b data-i="ustm"></b><small data-i="pl3n"></small></span></div>
           <h3 data-i="pl3t"></h3><p data-i="pl3"></p>
           <span class="more"><span data-i="pl3c"></span><svg><use href="#i-arrow"/></svg></span>
         </a>
@@ -481,7 +484,7 @@ footer.site .fl img{height:24px;width:auto}
         <p class="lead" data-i="p_l"></p>
       </div>
       <div class="figures">
-        <div class="fig"><b>60<em> т</em></b><span data-i="fg1"></span></div>
+        <div class="fig"><b data-i="u60f"></b><span data-i="fg1"></span></div>
         <div class="fig"><b>320</b><span data-i="fg2"></span></div>
         <div class="fig"><b>130</b><span data-i="fg3"></span></div>
       </div>
@@ -563,7 +566,8 @@ footer.site .fl img{height:24px;width:auto}
 
 <script>
 const T={
-ru:{sectors:[["i-home", "Бытовая химия", "Розница, сети, маркетплейсы", ["Гели для стирки", "Средства для посуды", "Отбеливатели", "Жидкое мыло"]], ["i-cutlery", "HoReCa", "Рестораны, кафе, отели, фастфуд", ["Обезжириватели", "Средства для посуды 5 л", "Мыло для рук", "Средства для санузлов"]], ["i-spray", "Клининг", "Клининговые компании, бизнес-центры", ["Универсальные средства", "Для стёкол", "Для полов", "Для сантехники"]], ["i-car", "Автохимия", "Автомойки и детейлинг", ["Активная пена", "Автошампуни", "Очистители дисков", "Стеклоомыватели"]], ["i-washer", "Прачечные и химчистки", "Прачечные, химчистки, гостиничное бельё", ["Гели для стирки", "Отбеливатели", "Пятновыводители", "Кондиционеры"]], ["i-factory", "Производства", "Пищевые и промышленные предприятия", ["Кислотные средства", "Щелочные средства", "Обезжириватели", "Средства для труб"]]],cats:"<div><h4>Бытовая химия</h4><ul><li>Гели для стирки</li><li>Средства для посуды</li><li>Отбеливатели</li><li>Жидкое и крем-мыло</li><li>Чистящие порошки</li><li>Средства для труб</li><li>Средства для стёкол</li><li>Антижир</li></ul></div><div><h4>Профессиональная химия</h4><ul><li>Обезжириватели для кухонь</li><li>Кислотные средства</li><li>Щелочные средства</li><li>Химия для HoReCa</li><li>Химия для клининга</li><li>Канистры 5 л для бизнеса</li></ul></div>",pl3c:"Обсудить сотрудничество",pl3:"Любые категории бытовой химии и производство под вашим брендом.",pl3t:"Ждём ваших предложений",pl3n:"и любые категории",pl2:"Оценка 4,7 от 15 808 покупателей. Вы берёте товар с доказанным спросом.",pl2t:"Уже продаётся на маркетплейсах",pl2n:"заказов на Uzum Market",pl1:"Мы производитель, а не посредник. Сделаем любую бытовую и профессиональную химию по цене завода.",pl1t:"Первые руки — самая низкая цена",pl1n:"продукции в месяц",nav_what:"Что производим",nav_cat:"Продукция",nav_prod:"Производство",nav_part:"Партнёрам",nav_cont:"Контакты",nav_cta:"Получить прайс",
+zh:{"u60":"60 吨","ustm":"OEM","u60f":"60<em> 吨</em>","sectors": [["i-home", "日用化学品", "零售、连锁超市、电商平台", ["洗衣液", "洗洁精", "漂白剂", "洗手液"]], ["i-cutlery", "酒店餐饮（HoReCa）", "餐厅、咖啡馆、酒店、快餐", ["重油污清洁剂", "5升洗洁精", "洗手液", "卫生间清洁剂"]], ["i-spray", "保洁清洁", "保洁公司、写字楼", ["多用途清洁剂", "玻璃清洁剂", "地面清洁剂", "洁具清洁剂"]], ["i-car", "汽车护理用品", "洗车店、汽车美容", ["泡沫洗车液", "洗车香波", "轮毂清洁剂", "玻璃水"]], ["i-washer", "洗衣房与干洗店", "洗衣房、干洗店、酒店布草", ["洗衣液", "漂白剂", "去渍剂", "柔顺剂"]], ["i-factory", "工业生产", "食品及工业企业", ["酸性清洁剂", "碱性清洁剂", "除油剂", "管道疏通剂"]]], "nav_what": "我们生产什么", "nav_cat": "产品", "nav_prod": "生产", "nav_part": "合作", "nav_cont": "联系我们", "nav_cta": "获取报价", "h_k": "日化工厂 · 塔什干", "h_t": "日用及专业化学品 <span class=\"accent\">源头工厂</span>", "h_l": "工厂直供价：没有中间商，没有加价。可按您的市场需求或您的品牌生产任何产品。", "h_c1": "获取批发价目表", "h_c2": "查看产品", "pl1n": "月产量", "pl1t": "源头工厂，价格最低", "pl1": "我们是生产商，不是中间商。以出厂价生产各类日用及专业化学品。", "pl2n": "Uzum Market 订单", "pl2t": "电商平台热销", "pl2": "15 808 位买家评分 4.7。您采购的是已验证市场需求的产品。", "pl3n": "及任何品类", "pl3t": "期待您的合作提案", "pl3": "欢迎任何日化品类的合作，以及贴牌代工（OEM）。", "pl3c": "洽谈合作", "w_k": "我们生产什么", "w_t": "各类日用及专业化学品", "w_l": "销售自有品牌 Salute 和 A+，为您的品牌代工生产，并按需开发新产品。", "o_t": "自有品牌 Salute 和 A+", "o_l": "覆盖家居、厨房和洗衣的完整产品线。俄语和乌兹别克语标签，Uzum Market 销量验证需求，可直接上架。", "stm_tag": "贴牌代工 · OEM / Private label", "stm_t": "以您的品牌进行生产", "stm_l": "您销售自己的品牌，我们负责配方、灌装以及每批次的稳定质量。", "stm_list": "<li>根据您的市场定制配方、香型和颜色</li><li>包装规格 500 毫升至 25 公斤</li><li>量产前提供样品和试产批次</li><li>每批次质量一致</li>", "cl_t": "已为以下品牌代工", "cl_more": "及其他品牌", "stm_steps": "<div>提交需求</div><div>样品确认</div><div>您的标签</div><div>生产与发货</div>", "c_k": "产品", "c_t": "热销产品", "c_l": "按 2026 年 7–10 月销量排序。完整的 54 款产品目录可按需发送。", "c_note": "买家评分来自 Uzum Market", "f_all": "全部", "f_laundry": "洗衣", "f_kitchen": "厨房", "f_clean": "清洁", "f_care": "个人护理", "hit": "热销", "rev": "条评价", "opt": "适用于批发及酒店餐饮", "p_k": "生产", "p_t": "塔什干一站式全流程生产", "p_l": "我们不转售他人产品：原料、配方、灌装和质检都在自己的工厂完成。", "fg1": "月产量", "fg2": "自动化生产线每小时瓶数", "fg3": "每小时 5 升桶装数量", "fl1t": "配料混合", "fl1": "来自可靠供应商的进口原料，1 吨和 2 吨工业搅拌釜。", "fl2t": "技术员质检", "fl2": "技术员检查每批次的稠度、气味和成分。", "fl3t": "灌装与包装", "fl3": "自动线：定量灌装、封盖、贴标、热收缩包装。", "fl4t": "仓储与发货", "fl4": "库存管理、订单分拣，塔什干市内自有配送。", "a_k": "合作", "a_t": "期待您的合作提案", "a_l": "分销、连锁、酒店餐饮或贴牌代工：告诉我们您的需求，我们提供产品方案和出厂价。", "a1t": "分销商", "a1": "<li>出厂价</li><li>可洽谈区域独家代理</li><li>协助制作电商平台产品页</li>", "a2t": "商店与连锁", "a2": "<li>已验证需求的畅销产品</li><li>零售规格 400 克至 2 升</li><li>提供试用样品</li>", "a3t": "酒店餐饮与保洁", "a3": "<li>厨房和洗衣房用 5 升桶装</li><li>重油污清洁剂、洗洁精、洗手液</li><li>稳定供货</li>", "r_k": "电商平台", "r_t": "在电商平台销量出色", "r_l": "Uzum Market 上 69 617 笔订单、15 808 条评价，平均评分 4.7。以下为买家评价（译文）。", "reviews": [["已经用了一个月，每天洗 4–5 次，一桶才用了一半，非常划算。", "Sevara", "Salute 洗衣液 5 升"], ["已经是第四次购买了，洗得非常干净。", "Nigora", "Salute 洗衣液"], ["本以为洗不干净桌布和毛巾，结果洗得很干净，衣物柔软又清香。", "买家", "Salute 洗衣液"], ["气味宜人，泡沫丰富，清洁效果好，还会再买。", "Tatyana", "Salute 洗衣液"], ["香味很好，质地浓稠。用完还会再买，推荐给大家。", "Munisa", "Salute 洗衣液"]], "k_k": "联系我们", "k_t": "洽谈供货", "k_l": "欢迎通过 Telegram 或 WhatsApp 留言或来电。我们可使用俄语、乌兹别克语沟通，中文请发文字消息。", "k_write": "发消息", "k_firm": "TURK SHANAY BIZNES 有限公司，塔什干", "k_uzum": "Uzum 店铺", "copy": "复制", "copied": "已复制", "phone": "电话", "fm_t": "索取价目表", "fm_s": "填写后申请将在 WhatsApp 中打开，只需点击发送。", "fm_name": "姓名和公司", "fm_city": "城市", "fm_type": "您是", "fm_msg": "感兴趣的产品", "ph_name": "王先生，某某贸易有限公司", "ph_city": "义乌", "ph_msg": "5 升洗衣液，需要报价和样品", "ph_need": "请填写姓名或公司", "types": ["分销商", "商店 / 连锁", "酒店餐饮 / 保洁", "贴牌代工（OEM）", "其他"], "fm_send": "发送申请", "fm_out": "如果 WhatsApp 没有打开，请复制以下文字发送到 Telegram 或任一号码：", "fm_copy": "复制文字", "msg": ["您好！来自 Salute 网站的询价。", "姓名/公司", "城市", "类型", "感兴趣的产品", "价目表"], "ft": "日化产品源头工厂"},
+ru:{u60:"60 т",ustm:"СТМ",u60f:"60<em> т</em>",sectors:[["i-home", "Бытовая химия", "Розница, сети, маркетплейсы", ["Гели для стирки", "Средства для посуды", "Отбеливатели", "Жидкое мыло"]], ["i-cutlery", "HoReCa", "Рестораны, кафе, отели, фастфуд", ["Обезжириватели", "Средства для посуды 5 л", "Мыло для рук", "Средства для санузлов"]], ["i-spray", "Клининг", "Клининговые компании, бизнес-центры", ["Универсальные средства", "Для стёкол", "Для полов", "Для сантехники"]], ["i-car", "Автохимия", "Автомойки и детейлинг", ["Активная пена", "Автошампуни", "Очистители дисков", "Стеклоомыватели"]], ["i-washer", "Прачечные и химчистки", "Прачечные, химчистки, гостиничное бельё", ["Гели для стирки", "Отбеливатели", "Пятновыводители", "Кондиционеры"]], ["i-factory", "Производства", "Пищевые и промышленные предприятия", ["Кислотные средства", "Щелочные средства", "Обезжириватели", "Средства для труб"]]],cats:"<div><h4>Бытовая химия</h4><ul><li>Гели для стирки</li><li>Средства для посуды</li><li>Отбеливатели</li><li>Жидкое и крем-мыло</li><li>Чистящие порошки</li><li>Средства для труб</li><li>Средства для стёкол</li><li>Антижир</li></ul></div><div><h4>Профессиональная химия</h4><ul><li>Обезжириватели для кухонь</li><li>Кислотные средства</li><li>Щелочные средства</li><li>Химия для HoReCa</li><li>Химия для клининга</li><li>Канистры 5 л для бизнеса</li></ul></div>",pl3c:"Обсудить сотрудничество",pl3:"Любые категории бытовой химии и производство под вашим брендом.",pl3t:"Ждём ваших предложений",pl3n:"и любые категории",pl2:"Оценка 4,7 от 15 808 покупателей. Вы берёте товар с доказанным спросом.",pl2t:"Уже продаётся на маркетплейсах",pl2n:"заказов на Uzum Market",pl1:"Мы производитель, а не посредник. Сделаем любую бытовую и профессиональную химию по цене завода.",pl1t:"Первые руки — самая низкая цена",pl1n:"продукции в месяц",nav_what:"Что производим",nav_cat:"Продукция",nav_prod:"Производство",nav_part:"Партнёрам",nav_cont:"Контакты",nav_cta:"Получить прайс",
 h_k:"Завод бытовой химии · Ташкент",
 h_t:"Бытовая и профессиональная химия <span class=\"accent\">от производителя</span>",
 h_l:"Цены первых рук: без посредников и наценок. Произведём любую позицию под ваш рынок или под ваш бренд.",
@@ -609,7 +613,7 @@ types:["Дистрибьютор","Магазин / сеть","HoReCa / клин
 fm_send:"Отправить заявку",fm_out:"Если WhatsApp не открылся, скопируйте текст и отправьте в Telegram или на любой номер:",fm_copy:"Скопировать текст",
 msg:["Здравствуйте! Заявка с сайта Salute.","Имя/компания","Город","Тип","Интересует","прайс"],
 ft:"бытовая химия от производителя"},
-kz:{sectors:[["i-home", "Тұрмыстық химия", "Бөлшек сауда, желілер, маркетплейстер", ["Кір жуу гельдері", "Ыдыс жуу құралдары", "Ағартқыштар", "Сұйық сабын"]], ["i-cutlery", "HoReCa", "Мейрамханалар, кафелер, қонақүйлер, фастфуд", ["Майсыздандырғыштар", "5 л ыдыс жуу құралдары", "Қол сабыны", "Санторапқа арналған құралдар"]], ["i-spray", "Клининг", "Клининг компаниялары, бизнес-орталықтар", ["Әмбебап құралдар", "Әйнекке", "Еденге", "Сантехникаға"]], ["i-car", "Автохимия", "Автожуу және детейлинг", ["Белсенді көбік", "Автошампундер", "Диск тазалағыштар", "Әйнек жуғыштар"]], ["i-washer", "Кір жуу орындары мен химчисткалар", "Кір жуу орындары, химчисткалар, қонақүй кір-жуы", ["Кір жуу гельдері", "Ағартқыштар", "Дақ кетіргіштер", "Кондиционерлер"]], ["i-factory", "Өндірістер", "Тамақ және өнеркәсіп кәсіпорындары", ["Қышқылды құралдар", "Сілтілі құралдар", "Майсыздандырғыштар", "Құбыр тазалағыштар"]]],cats:"<div><h4>Тұрмыстық химия</h4><ul><li>Кір жуу гельдері</li><li>Ыдыс жуу құралдары</li><li>Ағартқыштар</li><li>Сұйық және крем-сабын</li><li>Тазалағыш ұнтақтар</li><li>Құбыр тазалағыштар</li><li>Әйнек құралдары</li><li>Майға қарсы құрал</li></ul></div><div><h4>Кәсіби химия</h4><ul><li>Ас үйге арналған майсыздандырғыштар</li><li>Қышқылды құралдар</li><li>Сілтілі құралдар</li><li>HoReCa-ға арналған химия</li><li>Клинингке арналған химия</li><li>Бизнеске 5 л канистрлер</li></ul></div>",pl3c:"Ынтымақтастықты талқылау",pl3:"Тұрмыстық химияның кез келген санаты және сіздің брендіңізбен өндіріс.",pl3t:"Ұсыныстарыңызды күтеміз",pl3n:"және кез келген санат",pl2:"15 808 сатып алушыдан 4,7 баға. Сұранысы дәлелденген тауарды аласыз.",pl2t:"Маркетплейстерде сатылып жатыр",pl2n:"Uzum Market-тегі тапсырыс",pl1:"Біз делдал емес, өндірушіміз. Кез келген тұрмыстық және кәсіби химияны зауыт бағасымен жасаймыз.",pl1t:"Бірінші қол — ең төмен баға",pl1n:"айына өнім",nav_what:"Не шығарамыз",nav_cat:"Өнімдер",nav_prod:"Өндіріс",nav_part:"Серіктестерге",nav_cont:"Байланыс",nav_cta:"Прайс алу",
+kz:{u60:"60 т",ustm:"СТМ",u60f:"60<em> т</em>",sectors:[["i-home", "Тұрмыстық химия", "Бөлшек сауда, желілер, маркетплейстер", ["Кір жуу гельдері", "Ыдыс жуу құралдары", "Ағартқыштар", "Сұйық сабын"]], ["i-cutlery", "HoReCa", "Мейрамханалар, кафелер, қонақүйлер, фастфуд", ["Майсыздандырғыштар", "5 л ыдыс жуу құралдары", "Қол сабыны", "Санторапқа арналған құралдар"]], ["i-spray", "Клининг", "Клининг компаниялары, бизнес-орталықтар", ["Әмбебап құралдар", "Әйнекке", "Еденге", "Сантехникаға"]], ["i-car", "Автохимия", "Автожуу және детейлинг", ["Белсенді көбік", "Автошампундер", "Диск тазалағыштар", "Әйнек жуғыштар"]], ["i-washer", "Кір жуу орындары мен химчисткалар", "Кір жуу орындары, химчисткалар, қонақүй кір-жуы", ["Кір жуу гельдері", "Ағартқыштар", "Дақ кетіргіштер", "Кондиционерлер"]], ["i-factory", "Өндірістер", "Тамақ және өнеркәсіп кәсіпорындары", ["Қышқылды құралдар", "Сілтілі құралдар", "Майсыздандырғыштар", "Құбыр тазалағыштар"]]],cats:"<div><h4>Тұрмыстық химия</h4><ul><li>Кір жуу гельдері</li><li>Ыдыс жуу құралдары</li><li>Ағартқыштар</li><li>Сұйық және крем-сабын</li><li>Тазалағыш ұнтақтар</li><li>Құбыр тазалағыштар</li><li>Әйнек құралдары</li><li>Майға қарсы құрал</li></ul></div><div><h4>Кәсіби химия</h4><ul><li>Ас үйге арналған майсыздандырғыштар</li><li>Қышқылды құралдар</li><li>Сілтілі құралдар</li><li>HoReCa-ға арналған химия</li><li>Клинингке арналған химия</li><li>Бизнеске 5 л канистрлер</li></ul></div>",pl3c:"Ынтымақтастықты талқылау",pl3:"Тұрмыстық химияның кез келген санаты және сіздің брендіңізбен өндіріс.",pl3t:"Ұсыныстарыңызды күтеміз",pl3n:"және кез келген санат",pl2:"15 808 сатып алушыдан 4,7 баға. Сұранысы дәлелденген тауарды аласыз.",pl2t:"Маркетплейстерде сатылып жатыр",pl2n:"Uzum Market-тегі тапсырыс",pl1:"Біз делдал емес, өндірушіміз. Кез келген тұрмыстық және кәсіби химияны зауыт бағасымен жасаймыз.",pl1t:"Бірінші қол — ең төмен баға",pl1n:"айына өнім",nav_what:"Не шығарамыз",nav_cat:"Өнімдер",nav_prod:"Өндіріс",nav_part:"Серіктестерге",nav_cont:"Байланыс",nav_cta:"Прайс алу",
 h_k:"Тұрмыстық химия зауыты · Ташкент",
 h_t:"Тұрмыстық және кәсіби химия <span class=\"accent\">өндірушіден</span>",
 h_l:"Бірінші қол бағасы: делдалсыз және үстемесіз. Кез келген позицияны нарығыңызға немесе брендіңізге шығарамыз.",
@@ -657,18 +661,18 @@ msg:["Сәлеметсіз бе! Salute сайтынан өтінім.","Аты/
 ft:"өндірушіден тұрмыстық химия"}};
 
 const P=[
- {hit:1,f:"laundry",b:"Salute",v:"2 · 5 л",r:"4,9",n:1369,ru:"Гель для стирки, автомат",kz:"Кір жуу гелі, автомат",img:[["salute-gel5-red","#F49AAE"],["salute-gel5-blue","#3BA7E0"],["salute-gel2-red","#E50D2F"]]},
- {hit:1,f:"care",b:"Salute",v:"500 мл · 1 л · 5 л",ru:"Жидкое крем-мыло",kz:"Сұйық крем-сабын",img:[["salute-cream-blue","#5CC0EA"],["salute-cream-pink","#EE6FA5"]]},
- {hit:1,f:"laundry",b:"A+",v:"1 л",r:"4,7",n:1914,ru:"Отбеливатель для белого белья",kz:"Ақ кірге арналған ағартқыш",img:[["aplus-bleach","#2457B0"]]},
- {hit:1,f:"kitchen",b:"Salute",v:"600 мл",r:"4,8",n:1323,ru:"Антижир для плит и духовок",kz:"Плита мен пешке арналған майға қарсы құрал",img:[["salute-antifat","#3FA9E5"]]},
- {f:"laundry",b:"Salute",v:"1 л",r:"4,7",n:541,ru:"Отбеливатель «Безупречная белизна»",kz:"«Мінсіз ақтық» ағартқышы",img:[["salute-bleach-red","#E50D2F"],["salute-bleach-blue","#2457B0"]]},
- {f:"care",b:"A+",v:"500 мл · 5 л",r:"4,6",n:830,ru:"Жидкое мыло для рук",kz:"Қолға арналған сұйық сабын",img:[["aplus-soap-blue","#4FB6E3"],["aplus-soap-yellow","#F4D21F"],["aplus-soap-red","#E5323F"],["aplus-soap05","#F07A8C"]]},
- {f:"laundry",b:"Salute",v:"5 л",r:"4,9",n:1369,ru:"Гель для стирки 3X",kz:"3X кір жуу гелі",img:[["salute-gel5-silver","#6FD1C2"]]},
- {f:"kitchen",b:"A+",v:"5 л",r:"4,6",n:4103,ru:"Гель для мытья посуды",kz:"Ыдыс жуу гелі",img:[["aplus-dish-rasp","#E8364F"],["aplus-dish-apple","#2BA84A"],["aplus-dish-lemon","#F4D21F"]]},
- {f:"kitchen",b:"Salute",v:"500 мл · 5 л",r:"4,8",n:142,ru:"Гель для мытья посуды",kz:"Ыдыс жуу гелі",img:[["salute-dish5","#4CC34A"],["salute-dish05","#1E7A32"]]},
- {f:"clean",b:"Salute",v:"500 мл",r:"4,8",n:573,ru:"Средство для стёкол и зеркал",kz:"Әйнек пен айнаға арналған құрал",img:[["salute-glass","#4FB6E3"]]},
- {f:"clean",b:"Salute Turbo",v:"300 · 500 г",ru:"Средство для прочистки труб",kz:"Құбыр тазалағыш құрал",img:[["salute-turbo-500","#F26A1B"],["salute-turbo-300","#3A3A3A"]]},
- {f:"clean",b:"Salute",v:"400 г",r:"4,8",n:579,ru:"Чистящий порошок",kz:"Тазалағыш ұнтақ",img:[["salute-chistol","#F07C1E"]]}
+ {hit:1,f:"laundry",b:"Salute",v:"2 · 5 л",r:"4,9",n:1369,ru:"Гель для стирки, автомат",zh:"全自动洗衣液",kz:"Кір жуу гелі, автомат",img:[["salute-gel5-red","#F49AAE"],["salute-gel5-blue","#3BA7E0"],["salute-gel2-red","#E50D2F"]]},
+ {hit:1,f:"care",b:"Salute",v:"500 мл · 1 л · 5 л",ru:"Жидкое крем-мыло",zh:"液体乳霜皂",kz:"Сұйық крем-сабын",img:[["salute-cream-blue","#5CC0EA"],["salute-cream-pink","#EE6FA5"]]},
+ {hit:1,f:"laundry",b:"A+",v:"1 л",r:"4,7",n:1914,ru:"Отбеливатель для белого белья",zh:"白色衣物漂白剂",kz:"Ақ кірге арналған ағартқыш",img:[["aplus-bleach","#2457B0"]]},
+ {hit:1,f:"kitchen",b:"Salute",v:"600 мл",r:"4,8",n:1323,ru:"Антижир для плит и духовок",zh:"灶台烤箱重油污清洁剂",kz:"Плита мен пешке арналған майға қарсы құрал",img:[["salute-antifat","#3FA9E5"]]},
+ {f:"laundry",b:"Salute",v:"1 л",r:"4,7",n:541,ru:"Отбеливатель «Безупречная белизна»",zh:"“洁白无瑕”漂白剂",kz:"«Мінсіз ақтық» ағартқышы",img:[["salute-bleach-red","#E50D2F"],["salute-bleach-blue","#2457B0"]]},
+ {f:"care",b:"A+",v:"500 мл · 5 л",r:"4,6",n:830,ru:"Жидкое мыло для рук",zh:"洗手液",kz:"Қолға арналған сұйық сабын",img:[["aplus-soap-blue","#4FB6E3"],["aplus-soap-yellow","#F4D21F"],["aplus-soap-red","#E5323F"],["aplus-soap05","#F07A8C"]]},
+ {f:"laundry",b:"Salute",v:"5 л",r:"4,9",n:1369,ru:"Гель для стирки 3X",zh:"3X 洗衣液",kz:"3X кір жуу гелі",img:[["salute-gel5-silver","#6FD1C2"]]},
+ {f:"kitchen",b:"A+",v:"5 л",r:"4,6",n:4103,ru:"Гель для мытья посуды",zh:"洗洁精",kz:"Ыдыс жуу гелі",img:[["aplus-dish-rasp","#E8364F"],["aplus-dish-apple","#2BA84A"],["aplus-dish-lemon","#F4D21F"]]},
+ {f:"kitchen",b:"Salute",v:"500 мл · 5 л",r:"4,8",n:142,ru:"Гель для мытья посуды",zh:"洗洁精",kz:"Ыдыс жуу гелі",img:[["salute-dish5","#4CC34A"],["salute-dish05","#1E7A32"]]},
+ {f:"clean",b:"Salute",v:"500 мл",r:"4,8",n:573,ru:"Средство для стёкол и зеркал",zh:"玻璃镜面清洁剂",kz:"Әйнек пен айнаға арналған құрал",img:[["salute-glass","#4FB6E3"]]},
+ {f:"clean",b:"Salute Turbo",v:"300 · 500 г",ru:"Средство для прочистки труб",zh:"管道疏通剂",kz:"Құбыр тазалағыш құрал",img:[["salute-turbo-500","#F26A1B"],["salute-turbo-300","#3A3A3A"]]},
+ {f:"clean",b:"Salute",v:"400 г",r:"4,8",n:579,ru:"Чистящий порошок",zh:"去污粉",kz:"Тазалағыш ұнтақ",img:[["salute-chistol","#F07C1E"]]}
 ];
 const phones=["+998 99 080 87 45","+998 90 176 86 87","+998 90 934 34 00","+998 99 861 64 66"];
 const star='<svg><use href="#i-star"/></svg>';
@@ -679,9 +683,9 @@ function renderGrid(){
   const g=document.getElementById('grid'), t=T[L];
   g.innerHTML=P.map((p,i)=>`<article class="card" data-f="${p.f}" style="--c:${p.img[0][1]}"${filter!=='all'&&p.f!==filter?' hidden':''}>
     <div class="plinth">${p.hit?`<span class="hit">${star}${t.hit}</span>`:''}<img id="im${i}" src="img/${p.img[0][0]}.jpg" alt="${p.b} — ${p[L]}" loading="lazy"></div>
-    <div class="cbody"><span class="meta">${p.b}${p.v?` <i>· ${p.v}</i>`:''}</span><h3>${p[L]}</h3>
+    <div class="cbody"><span class="meta">${p.b}${p.v?` <i>· ${L==='zh'?p.v.replace(/мл/g,'ml').replace(/ л/g,' L').replace(/ г/g,' g'):p.v}</i>`:''}</span><h3>${p[L]}</h3>
     <div class="sw">${p.img.length>1?p.img.map((v,j)=>`<button type="button" style="background:${v[1]}" aria-pressed="${j===0}" aria-label="${j+1}" data-p="${i}" data-v="${j}"></button>`).join(''):''}</div>
-    <div class="foot">${p.r?`<b>${star}${p.r}</b><span>${nf(p.n)} ${t.rev}</span>`:`<span>${t.opt}</span>`}</div></div></article>`).join('');
+    <div class="foot">${p.r?`<b>${star}${L==='zh'?p.r.replace(',','.'):p.r}</b><span>${nf(p.n)} ${t.rev}</span>`:`<span>${t.opt}</span>`}</div></div></article>`).join('');
   g.querySelectorAll('.sw button').forEach(d=>d.addEventListener('click',()=>{
     const p=P[d.dataset.p], v=p.img[d.dataset.v], card=d.closest('.card'), im=document.getElementById('im'+d.dataset.p);
     im.src=`img/${v[0]}.jpg`; card.style.setProperty('--c',v[1]);
@@ -701,7 +705,7 @@ function renderPhones(){
 }
 function setLang(l){
   L=l; const t=T[l];
-  document.documentElement.lang=l==='kz'?'kk':'ru';
+  document.documentElement.lang={kz:'kk',zh:'zh-CN'}[l]||'ru';
   document.querySelectorAll('[data-i]').forEach(el=>{const v=t[el.dataset.i]; if(typeof v==='string') el.innerHTML=v});
   document.getElementById('name').placeholder=t.ph_name;
   document.getElementById('city').placeholder=t.ph_city;
@@ -735,6 +739,7 @@ document.getElementById('lead').addEventListener('submit',e=>{
 document.getElementById('copyMsg').addEventListener('click',e=>copy(document.getElementById('outText').textContent,e.currentTarget,'fm_copy'));
 let start='ru';
 if(location.hash==='#kz') start='kz';
+else if(location.hash==='#zh') start='zh';
 else if(location.hash!=='#ru'){ try{ start=localStorage.getItem('lang')||'ru' }catch(e){} }
 setLang(start);
 </script>
